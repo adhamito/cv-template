@@ -36,6 +36,12 @@
       "technologies": ["Next.js", "Tailwind", "ShadcnUI", "Typescript"],
       "description": "Estima-Dashboard is a responsive web application built with Next.js and styled using Tailwind CSS. It provides real-time insights and data visualization, allowing users to easily monitor essential metrics. With its sleek design and intuitive interface, Estima-Dashboard enhances productivity for personal and professional use.",
       "path": "https://github.com/adhamito/Estima-Dashboard-"
+    },
+    {
+      "name": "Cv-Template",
+      "technologies": ["Next.js", "Tailwind", "JavaScript"],
+      "description": "Cv-Template is a sleek and modern resume builder designed to help job seekers create professional CVs effortlessly. Utilizing Next.js for dynamic rendering and Tailwind CSS for customizable, responsive designs, this project allows users to craft visually appealing resumes that stand out. It's perfect for anyone looking to build a standout CV quickly and efficiently.",
+      "path": "https://github.com/adhamito/cv-template"
     }
   ],
   "skills": [

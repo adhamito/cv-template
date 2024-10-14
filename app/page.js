@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 
 export default function Home() {
   return (
-    <div className="p-4" id="pdf-content">
+    <div className="p-14" id="pdf-content">
       <div className="flex flex-row justify-center items-center relative">
         <Header />
         <DownloadPDFButton />
