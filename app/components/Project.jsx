@@ -9,6 +9,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io5";
 import data from "./data.json";
 import Link from "next/link";
 
@@ -61,6 +62,9 @@ const Projects = () => {
                     break;
                   case "Typescript":
                     icon = <SiTypescript className="text-blue-500" />;
+                    break;
+                  case "JavaScript":
+                    icon = <IoLogoJavascript className="text-yellow-500" />;
                     break;
                   default:
                     return null;
