@@ -3,8 +3,8 @@ import data from "./data.json";
 
 export default function FurtherEducation() {
   return (
-    <section className=" rounded-lg mb-4 bg-white">
-      <h2 className="text-2xl font-bold mb-4">Further Education</h2>
+    <section className=" rounded-lg mb-4 text-black ">
+      <h2 className="text-2xl font-bold mb-4 ">Further Education</h2>
 
       {data.furtherEducation.courses.map((course, index) => (
         <p key={index} className="text-lg">
