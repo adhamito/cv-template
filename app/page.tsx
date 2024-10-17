@@ -23,7 +23,7 @@ export default function Home() {
               id="pdf-content"
             >
               <div className="flex flex-row justify-center items-center relative">
-                <Header />
+                <Header info={data.personalInfo} />
               </div>
               <main className="flex flex-row justify-start items-start w-full">
                 <div className="w-1/2 h-full p-10">
