@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useRef, useState, useEffect } from "react";
 import { FaCss3Alt, FaGithub } from "react-icons/fa";
 import {
   SiLaravel,
@@ -12,18 +13,56 @@ import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import data from "./data.json";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Projects = () => {
+  const [visibleProjects, setVisibleProjects] = useState([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleProjects((prevVisible) => [
+              ...prevVisible,
+              entry.target.dataset.index,
+            ]);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const projectElements = document.querySelectorAll(".project-card");
+    projectElements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => {
+      projectElements.forEach((element) => {
+        observer.unobserve(element);
+      });
+    };
+  }, []);
+
   return (
-    <section className="p-6 ">
+    <section className="p-6">
       <h2 className="text-2xl font-bold mb-6 text-left text-gray-800 border-b-2 border-gray-300 pb-2">
         Projects
       </h2>
       <div className="flex flex-col space-y-8">
         {data.projects.map((project, index) => (
-          <div
+          <motion.div
             key={index}
-            className=" rounded-lg p-6 bg-white transition-transform transform hover:scale-105"
+            className="project-card rounded-lg p-6 bg-white transform transition-transform"
+            initial={{ opacity: 0, translateY: 50 }}
+            animate={
+              visibleProjects.includes(index.toString())
+                ? { opacity: 1, translateY: 0 }
+                : {}
+            }
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            data-index={index}
           >
             <div className="flex flex-row justify-between items-center">
               <h3 className="font-bold text-2xl mb-2 text-gray-900">
@@ -78,7 +117,7 @@ const Projects = () => {
                 );
               })}
             </ul>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

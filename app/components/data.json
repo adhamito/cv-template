@@ -66,26 +66,32 @@
       "degree": "Baccalaureate",
       "major": "Physical Sciences",
       "institution": "School Tingis",
-      "duration": "2019-2020",
-      "description": "Achieved my Baccalaureate in Physical Sciences with honors. This accomplishment reflects my dedication and strong foundation in subjects like physics, chemistry, and mathematics, setting the stage for my passion in technology and development."
+      "duration": "2019-2020"
     },
     {
       "degree": "English Studies",
       "institution": "Uskudar University",
-      "duration": "2020-2021",
-      "description": "Completed English Studies at Uskudar University, where I achieved a B2 level proficiency. This experience helped me develop strong communication skills, enhancing both my academic and professional abilities in an international context."
+      "duration": "2020-2021"
     },
     {
       "degree": "Economics",
       "institution": "AbdelMalik Essaadi University",
-      "duration": "2021-2022",
-      "description": "Completed Semester 1 in Economics at AbdelMalik Essaadi University. Although I did not finish the full academic year, my coursework provided foundational knowledge in economic theory and analysis."
+      "duration": "2021-2022"
     },
     {
       "degree": "Full Stack Development",
       "institution": "Ismontic",
-      "duration": "2022-2024",
-      "description": "I obtained my diploma in Full Stack Development in 2024 with distinction."
+      "duration": "2022-2024"
+    }
+  ],
+  "workExperience": [
+    {
+      "title": "Software Development Intern",
+      "company": "The Bridger",
+      "location": "Tangier, Morocco",
+      "durationStart": "01/01/2024",
+      "durationEnd": "04/06/2024",
+      "description": "As part of my Final Year Project (PFE) as a Full Stack Developer, I worked on a range of projects, including e-commerce platforms, library management systems, and portfolio websites. My responsibilities involved collaborating closely with stakeholders to define project requirements, designing and developing end-to-end web solutions, and ensuring optimal system performance. This project allowed me to apply theoretical knowledge in a practical setting and enhanced my skills in full-stack development."
     }
   ]
 }

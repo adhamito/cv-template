@@ -3,6 +3,7 @@
 import React from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
+import { IoMdDownload } from "react-icons/io";
 
 const DownloadPDFButton = () => {
   const downloadPDF = async () => {
@@ -37,9 +38,9 @@ const DownloadPDFButton = () => {
     <button
       id="download-button"
       onClick={downloadPDF}
-      className="mt-2 p-2 bg-gray-800 text-white rounded hover:bg-green-700 absolute right-0"
+      className=" bg-gray-800 text-white rounded hover:bg-green-700 "
     >
-      Download as PDF
+      <IoMdDownload size={25} />
     </button>
   );
 };
