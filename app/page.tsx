@@ -3,7 +3,7 @@ import ContactDetails from "./components/ContactDetails";
 import Education from "./components/Education";
 import FurtherEducation from "./components/FurtherEducation";
 import Header from "./components/Header";
-import Projects from "./components/Project";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import NavBar from "./components/NavBar";
 import WorkExperience from "./components/WorkExperience";
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
           </Layout>
           <Layout>
-            <Projects />
+            <Projects projects={data.projects} />
           </Layout>
         </div>
       </AuroraHero>
