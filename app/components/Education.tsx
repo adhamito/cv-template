@@ -1,9 +1,13 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import data from "./data.json";
+import { EducationModel } from "../models";
 
-const Education = () => {
+type EducationProps = {
+  educations: EducationModel[];
+}
+
+const Education: FC<EducationProps> = ({ educations }) => {
   const [visibleItems, setVisibleItems] = useState([]);
 
   useEffect(() => {
@@ -13,7 +17,7 @@ const Education = () => {
           if (entry.isIntersecting) {
             setVisibleItems((prevVisible) => [
               ...prevVisible,
-              entry.target.dataset.index,
+              (entry.target as HTMLElement).dataset.index,
             ]);
           }
         });
@@ -37,7 +41,7 @@ const Education = () => {
     <section className="p-2 text-black">
       <h2 className="text-2xl font-bold mb-1">Education</h2>
       <ul className="space-y-4">
-        {data.education.map((edu, index) => (
+        {educations.map((edu, index) => (
           <motion.li
             key={index}
             className="education-item  bg-white "

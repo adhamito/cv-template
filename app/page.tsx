@@ -34,7 +34,7 @@ export default function Home() {
                 <div className="w-full border-l-2 border-gray-400">
                   <About about={data.personalInfo.about} />
                   <WorkExperience experiences={data.experiences} />
-                  <Education />
+                  <Education educations={data.educations} />
                 </div>
               </main>
             </div>
