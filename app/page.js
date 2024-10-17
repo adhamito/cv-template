@@ -33,14 +33,22 @@ export default function Home() {
                 <div className="w-full border-l-2 border-gray-400">
                   <About />
                   <WorkExperience />
-                  <Education />
+                  <Education className="hidden md:block" />
                 </div>
               </main>
             </div>
           </Layout>
-          <Layout>
-            <Projects />
-          </Layout>
+          <div className="block md:hidden">
+            <Layout>
+              <Education />
+              <Projects />
+            </Layout>
+          </div>
+          <div className="hidden md:block">
+            <Layout>
+              <Projects />
+            </Layout>
+          </div>
         </div>
       </AuroraHero>
     </div>
