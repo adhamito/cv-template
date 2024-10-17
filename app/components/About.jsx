@@ -3,11 +3,13 @@ import data from "./data.json";
 
 const About = () => {
   return (
-    <section className="mx-auto p-2 text-black">
-      <h2 className="text-2xl font-bold mb-4 text-left border-b-2 border-b-gray-400">
+    <section className="mx-auto p-2 text-white">
+      <h2 className="md:text-2xl text-xl font-bold text-left border-b-2 border-b-gray-300">
         About
       </h2>
-      <p className="text-gray-700 leading-relaxed">{data.personalInfo.about}</p>
+      <p className="text-gray-400 leading-relaxed text-xs md:text-lg">
+        {data.personalInfo.about}
+      </p>
     </section>
   );
 };

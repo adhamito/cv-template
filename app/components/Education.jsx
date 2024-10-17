@@ -34,13 +34,13 @@ const Education = () => {
   }, []);
 
   return (
-    <section className="p-2 text-black">
-      <h2 className="text-2xl font-bold mb-1">Education</h2>
-      <ul className="space-y-4">
+    <section className="p-2 text-white">
+      <h2 className="md:text-2xl text-lg font-bold mb-1">Education</h2>
+      <ul className="md:space-y-4 space-y-1 ">
         {data.education.map((edu, index) => (
           <motion.li
             key={index}
-            className="education-item  bg-white "
+            className="education-item text-sm md:text-lg  "
             initial={{ opacity: 0, translateY: 50 }}
             animate={
               visibleItems.includes(index.toString())

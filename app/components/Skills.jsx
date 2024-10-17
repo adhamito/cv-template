@@ -1,17 +1,21 @@
 import React from "react";
 import data from "./data.json";
 
-export default function Skills() {
+const Skills = () => {
   return (
-    <section className=" rounded-lg mb-4">
-      <h2 className="text-2xl font-bold mb-2">Skills</h2>
-      <ul className="grid grid-cols-1 text-start  text-black">
+    <section className="rounded-lg mb-2  text-white ">
+      <h2 className="md:text-2xl text-base font-bold border-b-1 border-gray-300">
+        Skills
+      </h2>
+      <ul className=" text-start ">
         {data.skills.map((skill) => (
           <li key={skill}>
-            <span className="px-3">{skill}</span>
+            <span className="text-xs md:text-xl">{skill}</span>
           </li>
         ))}
       </ul>
     </section>
   );
-}
+};
+
+export default Skills;

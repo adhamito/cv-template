@@ -46,15 +46,18 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="p-6">
-      <h2 className="text-2xl font-bold mb-6 text-left text-gray-800 border-b-2 border-gray-300 pb-2">
+    <section className="p-1">
+      <h2
+        className="md:text-2xl text-lg font-bold md:mb-4 mb-1 text-left text-white border-b-1
+       border-gray-400 pb-2"
+      >
         Projects
       </h2>
-      <div className="flex flex-col space-y-8">
+      <div className="flex flex-col md:space-y-8 space-y-1">
         {data.projects.map((project, index) => (
           <motion.div
             key={index}
-            className="project-card rounded-lg p-6 bg-white transform transition-transform"
+            className="project-card rounded-lg md:p-6 p-1  transform transition-transform"
             initial={{ opacity: 0, translateY: 50 }}
             animate={
               visibleProjects.includes(index.toString())
@@ -64,16 +67,21 @@ const Projects = () => {
             transition={{ duration: 0.5, ease: "easeOut" }}
             data-index={index}
           >
-            <div className="flex flex-row justify-between items-center">
-              <h3 className="font-bold text-2xl mb-2 text-gray-900">
+            <div className="flex flex-row justify-between items-center text-white">
+              <h3 className="font-bold md:text-2xl text-lg md:mb-2  ">
                 {project.name}
               </h3>
               <Link href={project.path + "?project=" + project.name}>
                 <FaGithub size={25} className="text-blue-800" />
               </Link>
             </div>
-            <p className="text-sm text-gray-700 mb-4">{project.description}</p>
-            <ul className="flex flex-wrap items-center space-x-4 text-sm text-gray-800">
+            <p className="md:text-sm text-xs text-gray-300 md:mb-4 ">
+              {project.description}
+            </p>
+            <ul
+              className="flex flex-wrap items-center md:space-x-4 space-x-1  md:text-sm text-xs
+             text-gray-300"
+            >
               {project.technologies.map((tech, index) => {
                 let icon;
 
@@ -110,7 +118,10 @@ const Projects = () => {
                 }
 
                 return (
-                  <li key={index} className="flex items-center space-x-2">
+                  <li
+                    key={index}
+                    className="flex items-center md:space-x-4 space-x-1"
+                  >
                     {icon}
                     <span className="font-semibold">{tech}</span>
                   </li>
