@@ -9,7 +9,7 @@ import NavBar from "./components/NavBar";
 import WorkExperience from "./components/WorkExperience";
 import Layout from "./components/layout";
 import AuroraHero from "./AuroraHero";
-import data from "./components/data.json";
+import data from "./data.json";
 
 export default function Home() {
   return (
