@@ -32,7 +32,7 @@ export default function Home() {
                   <FurtherEducation />
                 </div>
                 <div className="w-full border-l-2 border-gray-400">
-                  <About />
+                  <About about={data.personalInfo.about} />
                   <WorkExperience />
                   <Education />
                 </div>
