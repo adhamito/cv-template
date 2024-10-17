@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import WorkExperience from "./components/WorkExperience";
 import Layout from "./components/layout";
 import AuroraHero from "./AuroraHero";
+import data from "./components/data.json";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
               </div>
               <main className="flex flex-row justify-start items-start w-full">
                 <div className="w-1/2 h-full p-10">
-                  <ContactDetails />
+                  <ContactDetails contactDetails={data.personalInfo.contactDetails} />
                   <Skills />
                   <FurtherEducation />
                 </div>
