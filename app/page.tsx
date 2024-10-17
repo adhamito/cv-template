@@ -28,7 +28,7 @@ export default function Home() {
               <main className="flex flex-row justify-start items-start w-full">
                 <div className="w-1/2 h-full p-10">
                   <ContactDetails contactDetails={data.personalInfo.contactDetails} />
-                  <Skills />
+                  <Skills skills={data.skills} />
                   <FurtherEducation />
                 </div>
                 <div className="w-full border-l-2 border-gray-400">

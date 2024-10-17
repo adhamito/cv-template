@@ -1,12 +1,15 @@
-import React from "react";
-import data from "./data.json";
+import { FC } from "react";
 
-export default function Skills() {
+type SkillsProps = {
+  skills: string[];
+}
+
+export const Skills: FC<SkillsProps> = ({ skills }) => {
   return (
     <section className=" rounded-lg mb-4">
       <h2 className="text-2xl font-bold mb-2">Skills</h2>
       <ul className="grid grid-cols-1 text-start  text-black">
-        {data.skills.map((skill) => (
+        {skills.map((skill) => (
           <li key={skill}>
             <span className="px-3">{skill}</span>
           </li>
@@ -15,3 +18,5 @@ export default function Skills() {
     </section>
   );
 }
+
+export default Skills;
