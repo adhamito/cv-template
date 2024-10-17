@@ -29,7 +29,7 @@ export default function Home() {
                 <div className="w-1/2 h-full p-10">
                   <ContactDetails contactDetails={data.personalInfo.contactDetails} />
                   <Skills skills={data.skills} />
-                  <FurtherEducation />
+                  <FurtherEducation furtherEducation={data.furtherEducation} />
                 </div>
                 <div className="w-full border-l-2 border-gray-400">
                   <About about={data.personalInfo.about} />
