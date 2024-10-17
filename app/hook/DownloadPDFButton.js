@@ -38,7 +38,7 @@ const DownloadPDFButton = () => {
     <button
       id="download-button"
       onClick={downloadPDF}
-      className=" bg-gray-800 text-white rounded hover:bg-green-700 "
+      className=" bg-gray-800 text-white   "
     >
       <IoMdDownload size={25} />
     </button>
