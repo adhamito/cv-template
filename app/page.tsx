@@ -33,7 +33,7 @@ export default function Home() {
                 </div>
                 <div className="w-full border-l-2 border-gray-400">
                   <About about={data.personalInfo.about} />
-                  <WorkExperience />
+                  <WorkExperience experiences={data.experiences} />
                   <Education />
                 </div>
               </main>
