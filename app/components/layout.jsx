@@ -45,9 +45,10 @@ const Layout = ({ children }) => {
 
   return (
     <div
-      className={`relative w-[210mm] h-[297mm] mb-4 mt-4 bg-white border-t-1
-         ${borderColor.top} border-r-1 ${borderColor.right} border-b-1 ${borderColor.bottom} 
-         border-l-1 ${borderColor.left} overflow-hidden`}
+      className={`relative md:w-[210mm] md:h-[297mm] mb-2 mt-2 bg-white border-t-2
+      ${borderColor.top} border-r-2 ${borderColor.right} border-b-2 ${borderColor.bottom} 
+      border-l-2 ${borderColor.left} overflow-hidden 
+      md:w-[160mm] md:h-[230mm] sm:w-[120mm] sm:h-[160mm]`}
     >
       <div className="absolute inset-0">{children}</div>
     </div>
