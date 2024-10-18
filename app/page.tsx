@@ -7,9 +7,9 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import NavBar from "./components/NavBar";
 import WorkExperience from "./components/WorkExperience";
-import Layout from "./components/layout";
 import AuroraHero from "./AuroraHero";
 import data from "./data.json";
+import Page from "./components/layouts/Page";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <AuroraHero>
         <div className="py-14 bg-transparent flex flex-col gap-3 justify-center items-center relative z-10">
           <NavBar />
-          <Layout>
+          <Page variant="A4">
             <div
               className="mt-8 shadow-sm rounded-sm items-center"
               id="pdf-content"
@@ -38,10 +38,10 @@ export default function Home() {
                 </div>
               </main>
             </div>
-          </Layout>
-          <Layout>
+          </Page>
+          <Page variant="A4">
             <Projects projects={data.projects} />
-          </Layout>
+          </Page>
         </div>
       </AuroraHero>
     </div>
