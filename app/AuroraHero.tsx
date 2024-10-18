@@ -1,9 +1,6 @@
 "use client"; // Ensure this is at the top of the file
 
-import { Stars } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
 import React, { useEffect } from "react";
-import { FiArrowRight } from "react-icons/fi";
 import {
   useMotionTemplate,
   useMotionValue,
@@ -23,11 +20,11 @@ const AuroraHero = ({ children }) => {
       repeat: Infinity,
       repeatType: "mirror",
     });
-  }, []);
+  }, [color]);
 
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
-  const border = useMotionTemplate`1px solid ${color}`;
-  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+  // const border = useMotionTemplate`1px solid ${color}`;
+  // const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
 
   return (
     <motion.section
