@@ -17,46 +17,102 @@
       "name": "E-commerce Website",
       "technologies": ["Laravel", "React", "Redux", "Tailwind"],
       "description": "I worked with three-person teams to create an e-commerce website from scratch for a class project.",
-      "path": "https://github.com/adhamito/ad"
+      "path": "https://github.com/adhamito/ad",
+      "img": "/assets/1.jpg"
     },
     {
       "name": "Library Management System",
       "technologies": ["Laravel", "React"],
       "description": "Our project aimed to develop a comprehensive library management system that streamlined cataloging, lending, and tracking of resources to enhance accessibility and efficiency for both librarians and patrons.",
-      "path": "https://github.com/adhamito/bilb_laravel-"
+      "path": "https://github.com/adhamito/bilb_laravel-",
+      "img": "/assets/2.jpg"
     },
     {
       "name": "Portfolio Website",
       "technologies": ["HTML", "CSS", "React", "Tailwind"],
       "description": "Developing a comprehensive website portfolio to showcase my projects, services, and capabilities.",
-      "path": "https://github.com/adhamito/my-portfolio"
+      "path": "https://github.com/adhamito/my-portfolio",
+      "img": "/assets/3.jpg"
     },
     {
       "name": "Estima-Dashboard",
       "technologies": ["Next.js", "Tailwind", "ShadcnUI", "Typescript"],
       "description": "Estima-Dashboard is a responsive web application built with Next.js and styled using Tailwind CSS. It provides real-time insights and data visualization, allowing users to easily monitor essential metrics. With its sleek design and intuitive interface, Estima-Dashboard enhances productivity for personal and professional use.",
-      "path": "https://github.com/adhamito/Estima-Dashboard-"
+      "path": "https://github.com/adhamito/Estima-Dashboard-",
+      "img": "/assets/4.jpg"
     },
     {
       "name": "Cv-Template",
       "technologies": ["Next.js", "Tailwind", "JavaScript"],
       "description": "Cv-Template is a sleek and modern resume builder designed to help job seekers create professional CVs effortlessly. Utilizing Next.js for dynamic rendering and Tailwind CSS for customizable, responsive designs, this project allows users to craft visually appealing resumes that stand out. It's perfect for anyone looking to build a standout CV quickly and efficiently.",
-      "path": "https://github.com/adhamito/cv-template"
+      "path": "https://github.com/adhamito/cv-template",
+      "img": "/assets/5.jpg"
     }
   ],
+
   "skills": [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Node.js",
-    "Python",
-    "Laravel",
-    "Git",
-    "Tailwind CSS",
-    "Redux",
-    "next.js"
+    {
+      "name": "HTML",
+      "experience": "6 years",
+      "description": "I have been using HTML for 6 years now. I have a deep understanding of semantic HTML and have used it in various projects, from simple websites to complex web applications."
+    },
+    {
+      "name": "CSS",
+      "experience": "3 years",
+      "description": "With 3 years of CSS experience, I can create responsive, accessible, and visually appealing web pages. I have expertise in using CSS frameworks like Bootstrap and Tailwind, as well as custom styling."
+    },
+    {
+      "name": "JavaScript",
+      "experience": "3 years",
+      "description": "I have 3 years of experience with JavaScript, building dynamic, interactive web applications. I am skilled in both vanilla JavaScript and modern frameworks such as React and Node.js."
+    },
+    {
+      "name": "React",
+      "experience": "2 years",
+      "description": "I have been working with React for 2 years, building reusable components and single-page applications (SPAs). I have experience managing state with Redux and building scalable web apps."
+    },
+    {
+      "name": "Node.js",
+      "experience": "2 years",
+      "description": "I have 2 years of experience working with Node.js, creating server-side applications, APIs, and handling asynchronous operations. I am comfortable working with Express and integrating Node.js with databases like MongoDB and MySQL."
+    },
+    {
+      "name": "Python",
+      "experience": "3 years",
+      "description": "With 3 years of Python experience, I have worked on automation scripts, data analysis, and web development. I have also used Python frameworks like Django and Flask for backend development."
+    },
+    {
+      "name": "Laravel",
+      "experience": "1 year",
+      "description": "I have used Laravel for a year, primarily for backend development, building robust, secure web applications and RESTful APIs with efficient database handling."
+    },
+    {
+      "name": "Git",
+      "experience": "3 years",
+      "description": "I have been using Git for 3 years, collaborating with teams and managing version control for projects. I am familiar with branching, merging, and resolving conflicts in Git repositories."
+    },
+    {
+      "name": "Tailwind CSS",
+      "experience": "1 year",
+      "description": "Over the past year, I have used Tailwind CSS to quickly design and develop responsive, mobile-first web pages with utility-first styling, making CSS development more efficient."
+    },
+    {
+      "name": "Redux",
+      "experience": "1.5 years",
+      "description": "I have worked with Redux for 1.5 years to manage complex state across large React applications, ensuring clean, maintainable, and scalable code for front-end development."
+    },
+    {
+      "name": "next.js",
+      "experience": "1 year",
+      "description": "With 1 year of experience in next.js, I have built SEO-optimized, server-side rendered (SSR) applications, including static generation and dynamic routing for performant websites."
+    },
+    {
+      "name": "Nest.js",
+      "experience": "1 year",
+      "description": "I have been using Nest.js for 1 year now. I have experience building scalable, maintainable backend applications using TypeScript, leveraging its powerful features like dependency injection, decorators, and modular architecture to create robust REST APIs and microservices."
+    }
   ],
+
   "furtherEducation": {
     "courses": ["Complete mastery of Full Stack Web - Udemy"],
     "currentlyLearning": ["Next js", "Nest js", "Cloud Native"]
