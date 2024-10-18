@@ -5,7 +5,7 @@ import FurtherEducation from "./components/FurtherEducation";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/layouts/NavBar";
 import WorkExperience from "./components/WorkExperience";
 import AuroraHero from "./AuroraHero";
 import data from "./data.json";
