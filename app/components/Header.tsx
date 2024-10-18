@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { PersonalInfoModel } from "../models";
+import { BackgroundLines } from "./ui/background-lines";
 
 type HeaderProps = {
   info: PersonalInfoModel;
