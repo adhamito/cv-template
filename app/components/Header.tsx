@@ -8,7 +8,7 @@ type HeaderProps = {
 export const Header: FC<HeaderProps> = ({ info }) => {
   return (
     <header className="text-center my-6 py-4 text-black">
-      <h1 className="text-4xl font-bold">{info.name}</h1>
+      <h1 className="text-4xl font-bold bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white font-sans relative z-20 tracking-tight">{info.name}</h1>
       <p className="text-lg font-medium">{info.title}</p>
     </header>
   );
