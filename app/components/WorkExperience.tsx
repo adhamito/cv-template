@@ -1,14 +1,18 @@
-import React from "react";
-import data from "./data.json";
+import { FC } from "react";
+import { WorkExperienceModel } from "../models/work-experience.model";
 
-export default function WorkExperience() {
+type WorkExperienceProps = {
+  experiences: WorkExperienceModel[];
+}
+
+export const WorkExperience: FC<WorkExperienceProps> = ({ experiences }) => {
   return (
     <section className="rounded-lg m-1 text-left text-black">
       <h2 className="text-xl font-bold  border-b-2 border-gray-400 mb-1 py-1">
         Work Experience
       </h2>
-      {data.workExperience.map((item, index) => (
-        <div key={index} className="mb-1">
+      {experiences.map((item) => (
+        <div key={item.durationStart} className="mb-1">
           <h2 className="text-lg font-bold">
             {item.title}--{item.company}
           </h2>
@@ -47,3 +51,5 @@ export default function WorkExperience() {
     </section>
   );
 }
+
+export default WorkExperience;

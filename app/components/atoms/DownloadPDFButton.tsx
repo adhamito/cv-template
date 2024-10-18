@@ -1,11 +1,10 @@
 "use client";
 
-import React from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import { IoMdDownload } from "react-icons/io";
 
-const DownloadPDFButton = () => {
+export const DownloadPDFButton = () => {
   const downloadPDF = async () => {
     const input = document.body;
     const downloadButton = document.getElementById("download-button");
