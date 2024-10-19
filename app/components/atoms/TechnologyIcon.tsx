@@ -82,7 +82,7 @@ export const TechnologyIcon: FC<TechnologyProps> = ({
       return (
         <SiNodedotjs size={size} className={cn("text-green-700", className)} />
       );
-    case "Nest.js":
+    case "nest.js":
       return <SiNestjs size={size} className={cn("text-black", className)} />;
     default:
       return null;

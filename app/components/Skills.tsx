@@ -7,6 +7,7 @@ import {
   Modal,
   ModalBody,
   ModalContent,
+  ModalFooter,
 } from "./ui/animated-modal";
 import projects from "../data.json";
 import { motion } from "framer-motion";
@@ -48,7 +49,7 @@ export const Skills: FC<SkillsProps> = ({ skills }) => {
       <h2 className="text-2xl font-bold mb-2 text-black text-center">SKILLS</h2>
 
       <Modal>
-        <ModalTrigger className=" dark:text-black text-white  ">
+        <ModalTrigger className=" dark:text-black text-white">
           <div className=" grid grid-cols-3  gap-4 ">
             {skills.map((skill) => (
               <div className="flex flex-col justify-center items-center">
@@ -119,6 +120,14 @@ export const Skills: FC<SkillsProps> = ({ skills }) => {
               </h3>
               <p className="leading-relaxed">{selectedSkill.description}</p>
             </ModalContent>
+            <ModalFooter>
+              <button
+                className="bg-blue-500 text-white p-2 rounded-lg"
+                onClick={closeModal}
+              >
+                Close
+              </button>
+            </ModalFooter>
           </ModalBody>
         )}
       </Modal>

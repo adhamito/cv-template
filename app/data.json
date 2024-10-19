@@ -107,7 +107,7 @@
       "description": "With 1 year of experience in next.js, I have built SEO-optimized, server-side rendered (SSR) applications, including static generation and dynamic routing for performant websites."
     },
     {
-      "name": "Nest.js",
+      "name": "nest.js",
       "experience": "1 year",
       "description": "I have been using Nest.js for 1 year now. I have experience building scalable, maintainable backend applications using TypeScript, leveraging its powerful features like dependency injection, decorators, and modular architecture to create robust REST APIs and microservices."
     }
