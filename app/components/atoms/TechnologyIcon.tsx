@@ -63,7 +63,7 @@ export const TechnologyIcon: FC<TechnologyProps> = ({
       return (
         <RiNextjsFill size={size} className={cn("text-black", className)} />
       );
-    case "shadcnuI":
+    case "shadcnui":
       return (
         <SiShadcnui size={size} className={cn("text-blue-500", className)} />
       );
@@ -83,7 +83,7 @@ export const TechnologyIcon: FC<TechnologyProps> = ({
         <SiNodedotjs size={size} className={cn("text-green-700", className)} />
       );
     case "nest.js":
-      return <SiNestjs size={size} className={cn("text-black", className)} />;
+      return <SiNestjs size={size} className={cn("text-red-600", className)} />;
     default:
       return null;
   }
