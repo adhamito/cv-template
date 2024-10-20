@@ -8,6 +8,7 @@ import React, {
   useEffect,
   useRef,
   useState,
+  FC,
 } from "react";
 
 interface ModalContextType {
@@ -16,8 +17,10 @@ interface ModalContextType {
 }
 
 const ModalContext = createContext<ModalContextType | undefined>(undefined);
-
-export const ModalProvider = ({ children }: { children: ReactNode }) => {
+type ModalProviderProps = {
+  children: ReactNode;
+};
+export const ModalProvider: FC<ModalProviderProps> = ({ children }) => {
   const [open, setOpen] = useState(false);
 
   return (
