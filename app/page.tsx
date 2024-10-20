@@ -19,33 +19,31 @@ export default function Home() {
         <div className="py-14 bg-transparent flex flex-col gap-3 justify-center items-center relative z-10">
           <NavBar />
           <Page variant="A4">
-            <BackgroundBeamsWithCollision>
-              <div
-                className="mt-8 shadow-sm rounded-sm items-center"
-                id="pdf-content"
-              >
-                <div className="flex flex-row justify-center items-center relative">
-                  <Header info={data.personalInfo} />
-                </div>
-                <main className="flex flex-row justify-start items-start w-full">
-                  <div className="w-1/2 h-full p-10">
-                    <ContactDetails contactDetails={data.personalInfo.contactDetails} />
-                    <Skills skills={data.skills} />
-                    <FurtherEducation furtherEducation={data.furtherEducation} />
-                  </div>
-                  <div className="w-full border-l-2 border-gray-400">
-                    <About about={data.personalInfo.about} />
-                    <WorkExperience experiences={data.experiences} />
-                    <Educations educations={data.educations} />
-                  </div>
-                </main>
+            <div
+              className="mt-8 shadow-sm rounded-sm items-center"
+              id="pdf-content"
+            >
+              <div className="flex flex-row justify-center items-center relative">
+                <Header info={data.personalInfo} />
               </div>
-            </BackgroundBeamsWithCollision>
+              <main className="flex flex-row justify-start items-start w-full">
+                <div className="w-1/2 h-full p-10">
+                  <ContactDetails
+                    contactDetails={data.personalInfo.contactDetails}
+                  />
+                  <Skills skills={data.skills} projects={data.projects} />
+                  <FurtherEducation furtherEducation={data.furtherEducation} />
+                </div>
+                <div className="w-full border-l-2 border-gray-400">
+                  <About about={data.personalInfo.about} />
+                  <WorkExperience experiences={data.experiences} />
+                  <Educations educations={data.educations} />
+                </div>
+              </main>
+            </div>
           </Page>
           <Page variant="A4">
-            <BackgroundBeamsWithCollision>
-              <Projects projects={data.projects} />
-            </BackgroundBeamsWithCollision>
+            <Projects projects={data.projects} />
           </Page>
         </div>
       </AuroraHero>

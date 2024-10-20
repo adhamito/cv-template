@@ -3,4 +3,5 @@ export class ProjectModel {
   technologies: string[];
   description: string;
   path: string;
+  img: string;
 }

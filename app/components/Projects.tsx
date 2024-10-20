@@ -6,7 +6,7 @@ import { ProjectModel } from "../models";
 
 type ProjectsProps = {
   projects: ProjectModel[];
-}
+};
 
 const Projects: FC<ProjectsProps> = ({ projects }) => {
   const visibleElements = useFadeIn({
@@ -21,7 +21,12 @@ const Projects: FC<ProjectsProps> = ({ projects }) => {
       </h2>
       <div className="flex flex-col space-y-8">
         {projects.map((project, index) => (
-          <Project key={project.name} project={project} index={index} visible={visibleElements.includes(index.toString())} />
+          <Project
+            key={project.name}
+            project={project}
+            index={index}
+            visible={visibleElements.includes(index.toString())}
+          />
         ))}
       </div>
     </section>
