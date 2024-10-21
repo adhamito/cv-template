@@ -11,6 +11,7 @@ import AuroraHero from "./AuroraHero";
 import data from "./data.json";
 import Page from "./components/layouts/Page";
 import { cn } from "./lib/utils";
+import { Hobbies } from "./components/Hobbies";
 
 export default function Home() {
   return (
@@ -31,11 +32,12 @@ export default function Home() {
                   contactDetails={data.personalInfo.contactDetails}
                 />
                 <Skills skills={data.skills} projects={data.projects} />
-                <Educations educations={data.educations} />
+                <Educations educations={data.educations.reverse()} />
               </div>
               <div className="w-full h-full border-l-2 border-gold-500 p-4">
                 <About about={data.personalInfo.about} />
                 <WorkExperience experiences={data.experiences} />
+                <Hobbies hobbies={data.hobbies} />
               </div>
             </main>
           </Page>
