@@ -19,7 +19,7 @@ export const SkillModal: FC<SkillModalProps> = ({ skill, projects }) => {
     <ModalBody className="bg-gray-900">
       <ModalContent className="items-center text-center py-6">
         <div className="flex  justify-center items-center">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mb-2">
             {projects.map((project, idx) => (
               <motion.div
                 key={"images" + idx}
