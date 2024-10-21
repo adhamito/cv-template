@@ -22,10 +22,8 @@ export const Education: FC<EducationProps> = ({
       transition={{ duration: 0.8, ease: "easeOut" }}
       data-index={index}
     >
-      <p className="font-semibold">
-        {education.degree} in{" "}
-        {education.major ? education.major : education.degree}
-      </p>
+      <p className="font-semibold">{education.degree}</p>
+      <p>{education.major ? `in ${education.major}` : ""}</p>
       <p>
         {education.institution}, {education.duration}
       </p>
