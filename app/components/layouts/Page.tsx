@@ -3,22 +3,26 @@ import { cn } from "../../lib/utils";
 
 type PageProps = {
   children?: ReactNode;
-  variant?: PageVariant
-}
+  variant?: PageVariant;
+  className?: string;
+};
 
 type PageVariant = "A4";
 
-export const Page: FC<PageProps> = ({ children, variant }) => {
-
+export const Page: FC<PageProps> = ({ children, variant, className }) => {
   return (
     <div
-      className={cn(`relative  bg-white border-t-2 border-r-2 border-b-2 border-l-2 overflow-hidden`, {
-        'sm:w-full md:w-[210mm] md:h-[297mm] mb-2 mt-2 shadow-2xl': variant === 'A4'
-      })}
+      className={cn(
+        `relative bg-gray-900 z-30 overflow-hidden`,
+        {
+          "min-w-[210mm] w-[210mm] h-[297mm]": variant === "A4",
+        },
+        className,
+      )}
     >
       {children}
     </div>
   );
-}
+};
 
 export default Page;

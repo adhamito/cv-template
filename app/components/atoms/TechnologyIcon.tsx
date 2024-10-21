@@ -61,7 +61,7 @@ export const TechnologyIcon: FC<TechnologyProps> = ({
       );
     case "next.js":
       return (
-        <RiNextjsFill size={size} className={cn("text-black", className)} />
+        <RiNextjsFill size={size} className={cn("text-white", className)} />
       );
     case "shadcnui":
       return (
