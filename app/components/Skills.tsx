@@ -28,7 +28,7 @@ export const Skills: FC<SkillsProps> = ({ skills, projects, className }) => {
       <SectionTitle title="Skills" />
 
       <Modal>
-        <div className="m-4 grid grid-cols-3  gap-4 ">
+        <div className="m-4 grid grid-cols-3 gap-4 ">
           {skills.map((skill) => (
             <SkillModalTrigger
               key={skill.name}
