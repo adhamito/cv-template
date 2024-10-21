@@ -3,6 +3,7 @@ import { FC } from "react";
 import Project from "./atoms/Project";
 import { useFadeIn } from "../hook";
 import { ProjectModel } from "../models";
+import { SectionTitle } from "./atoms/SectionTitle";
 
 type ProjectsProps = {
   projects: ProjectModel[];
@@ -16,9 +17,7 @@ const Projects: FC<ProjectsProps> = ({ projects }) => {
 
   return (
     <section className="p-6">
-      <h2 className="text-2xl font-bold mb-6 text-left text-gray-800 border-b-2 border-gray-300 pb-2">
-        Projects
-      </h2>
+      <SectionTitle title="Projects" />
       <div className="flex flex-col space-y-8">
         {projects.map((project, index) => (
           <Project

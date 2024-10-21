@@ -3,6 +3,7 @@ import { FC } from "react";
 import { EducationModel } from "../models";
 import { useFadeIn } from "../hook";
 import Education from "./atoms/Education";
+import { SectionTitle } from "./atoms/SectionTitle";
 
 type EducationsProps = {
   educations: EducationModel[];
@@ -15,8 +16,8 @@ const Educations: FC<EducationsProps> = ({ educations }) => {
   });
 
   return (
-    <section className="p-2 text-black">
-      <h2 className="text-2xl font-bold mb-1">Education</h2>
+    <section className="p-2">
+      <SectionTitle title="Education" />
       <ul className="space-y-4">
         {educations.map((education, index) => (
           <Education

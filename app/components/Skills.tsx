@@ -1,25 +1,19 @@
 "use client";
 import { FC, useMemo, useState } from "react";
-import { TechnologyIcon } from "./atoms";
-import {
-  ModalTrigger,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-} from "./ui/animated-modal";
-import { motion } from "framer-motion";
-import Image from "next/image";
+import { Modal } from "./ui/animated-modal";
 import { ProjectModel, SkillModel } from "../models";
 import { SkillModalTrigger } from "./modals/SkillModalTrigger";
 import { SkillModal } from "./modals/SkillModal";
+import { cn } from "../lib/utils";
+import { SectionTitle } from "./atoms/SectionTitle";
 
 type SkillsProps = {
   skills: SkillModel[];
   projects: ProjectModel[];
+  className?: string;
 };
 
-export const Skills: FC<SkillsProps> = ({ skills, projects }) => {
+export const Skills: FC<SkillsProps> = ({ skills, projects, className }) => {
   const [selectedSkill, setSelectedSkill] = useState<SkillModel | null>(null);
 
   const selectedProjects = useMemo(() => {
@@ -30,13 +24,14 @@ export const Skills: FC<SkillsProps> = ({ skills, projects }) => {
   }, [projects, selectedSkill]);
 
   return (
-    <section className="mb-4">
-      <h2 className="text-2xl font-bold mb-2 text-black text-center">SKILLS</h2>
+    <section className={cn("", className)}>
+      <SectionTitle title="Skills" />
 
       <Modal>
-        <div className=" grid grid-cols-3  gap-4 ">
+        <div className="m-4 grid grid-cols-3  gap-4 ">
           {skills.map((skill) => (
             <SkillModalTrigger
+              key={skill.name}
               skill={skill}
               setSelectSkill={setSelectedSkill}
             />

@@ -10,37 +10,34 @@ import WorkExperience from "./components/WorkExperience";
 import AuroraHero from "./AuroraHero";
 import data from "./data.json";
 import Page from "./components/layouts/Page";
-import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-with-collision";
+import { cn } from "./lib/utils";
 
 export default function Home() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="">
       <AuroraHero>
         <div className="py-14 bg-transparent flex flex-col gap-3 justify-center items-center relative z-10">
           <NavBar />
-          <Page variant="A4">
-            <div
-              className="mt-8 shadow-sm rounded-sm items-center"
-              id="pdf-content"
-            >
-              <div className="flex flex-row justify-center items-center relative">
-                <Header info={data.personalInfo} />
-              </div>
-              <main className="flex flex-row justify-start items-start w-full">
-                <div className="w-1/2 h-full p-10">
-                  <ContactDetails
-                    contactDetails={data.personalInfo.contactDetails}
-                  />
-                  <Skills skills={data.skills} projects={data.projects} />
-                  <FurtherEducation furtherEducation={data.furtherEducation} />
-                </div>
-                <div className="w-full border-l-2 border-gray-400">
-                  <About about={data.personalInfo.about} />
-                  <WorkExperience experiences={data.experiences} />
-                  <Educations educations={data.educations} />
-                </div>
-              </main>
+          <Page variant="A4" className="flex flex-col">
+            <div className="flex-none flex flex-row justify-center items-center relative">
+              <Header info={data.personalInfo} />
             </div>
+            <main className="grow flex flex-row justify-stretch items-start w-full">
+              <div
+                id="left-side"
+                className="flex-grow w-[70mm] h-full p-6 flex flex-col justify-around"
+              >
+                <ContactDetails
+                  contactDetails={data.personalInfo.contactDetails}
+                />
+                <Skills skills={data.skills} projects={data.projects} />
+                <Educations educations={data.educations} />
+              </div>
+              <div className="w-full h-full border-l-2 border-gold-500 p-4">
+                <About about={data.personalInfo.about} />
+                <WorkExperience experiences={data.experiences} />
+              </div>
+            </main>
           </Page>
           <Page variant="A4">
             <Projects projects={data.projects} />

@@ -7,7 +7,7 @@ type FurtherEducationProps = {
 
 export const FurtherEducation: FC<FurtherEducationProps> = ({ furtherEducation }) => {
   return (
-    <section className=" rounded-lg mb-4 text-black ">
+    <section className=" rounded-lg mb-4">
       <h2 className="text-2xl font-bold mb-4 ">Further Education</h2>
 
       {furtherEducation.courses.map((course) => (

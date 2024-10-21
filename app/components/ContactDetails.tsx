@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { ContactDetailsModel } from "../models";
+import { SectionTitle } from "./atoms/SectionTitle";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 type ContactDetailsProps = {
   contactDetails: ContactDetailsModel;
@@ -10,8 +11,8 @@ const ContactDetails: FC<ContactDetailsProps> = ({ contactDetails }) => {
     contactDetails.location
   )}`;
   return (
-    <section className="  max-w-md mb-2 text-black ">
-      <h2 className="text-2xl font-bold mb-2 text-center">Contact Details</h2>
+    <section className="  max-w-md mb-2">
+      <SectionTitle title="Contact Details" />
       <div className="">
         <div className="flex items-center space-x-4">
           <FaPhone className="text-blue-500" size={30} />
@@ -20,20 +21,20 @@ const ContactDetails: FC<ContactDetailsProps> = ({ contactDetails }) => {
             <h3 className="text-lg font-bold">Phone</h3>
             <a
               href={`tel:${contactDetails.phone}`}
-              className="text-gray-800 hover:underline"
+              className="hover:underline"
             >
               {contactDetails.phone}
             </a>
           </div>
         </div>
         <div className="flex items-center space-x-4">
-          <FaEnvelope className="text-gray-700" size={30} />
+          <FaEnvelope className="" size={30} />
 
           <div>
             <h3 className="text-lg font-semibold">E-mail</h3>
             <a
               href={`mailto:${contactDetails.email}`}
-              className="text-gray-700 hover:underline"
+              className="hover:underline"
             >
               {contactDetails.email}
             </a>
@@ -48,7 +49,7 @@ const ContactDetails: FC<ContactDetailsProps> = ({ contactDetails }) => {
               href={mapsLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 hover:underline"
+              className="hover:underline"
             >
               {contactDetails.location}
             </a>

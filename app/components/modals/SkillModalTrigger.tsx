@@ -23,7 +23,7 @@ export const SkillModalTrigger: FC<SkillModalTriggerProps> = ({
     >
       <TechnologyIcon size={25} className="text-lg" technology={skill.name} />
       <span>
-        <strong className="text-black">{skill.name}</strong>
+        <strong className="">{skill.name}</strong>
       </span>
     </div>
   );
