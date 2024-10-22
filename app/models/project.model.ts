@@ -4,4 +4,5 @@ export class ProjectModel {
   description: string;
   path: string;
   img: string;
+  url?: string;
 }

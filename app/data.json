@@ -1,7 +1,11 @@
 {
   "personalInfo": {
     "name": "ADHAM AL MECHKOR",
-    "title": "Full Stack Developer",
+    "title": {
+      "front": "Front end Developer",
+      "back": "Back end Developer",
+      "full": "Full Stack Developer"
+    },
     "contactDetails": {
       "phone": "+212 714268801",
       "email": "aalmechkor2@gmail.com",
@@ -32,21 +36,24 @@
       "technologies": ["HTML", "CSS", "React", "Tailwind"],
       "description": "Developing a comprehensive website portfolio to showcase my projects, services, and capabilities.",
       "path": "https://github.com/adhamito/my-portfolio",
-      "img": "/assets/3.jpg"
+      "img": "/assets/3.jpg",
+      "url": "https://relaxed-fenglisu-f96b87.netlify.app"
     },
     {
       "name": "Estima-Dashboard",
       "technologies": ["Next.js", "Tailwind", "ShadcnUI", "Typescript"],
       "description": "Estima-Dashboard is a responsive web application built with Next.js and styled using Tailwind CSS. It provides real-time insights and data visualization, allowing users to easily monitor essential metrics. With its sleek design and intuitive interface, Estima-Dashboard enhances productivity for personal and professional use.",
       "path": "https://github.com/adhamito/Estima-Dashboard-",
-      "img": "/assets/4.jpg"
+      "img": "/assets/4.jpg",
+      "url": "https://estima-dashboard.netlify.app"
     },
     {
       "name": "Cv-Template",
       "technologies": ["Next.js", "Tailwind", "JavaScript"],
       "description": "Cv-Template is a sleek and modern resume builder designed to help job seekers create professional CVs effortlessly. Utilizing Next.js for dynamic rendering and Tailwind CSS for customizable, responsive designs, this project allows users to craft visually appealing resumes that stand out. It's perfect for anyone looking to build a standout CV quickly and efficiently.",
       "path": "https://github.com/adhamito/cv-template",
-      "img": "/assets/5.jpg"
+      "img": "/assets/5.jpg",
+      "url": "https://cv-templateadhamalmechkor.netlify.app"
     }
   ],
 
@@ -127,16 +134,19 @@
     {
       "degree": "English Studies",
       "institution": "Uskudar University",
+
       "duration": "2020-2021"
     },
     {
       "degree": "Economics",
       "institution": "AbdelMalik Essaadi University",
+
       "duration": "2021-2022"
     },
     {
       "degree": "Full Stack Development",
       "institution": "Ismontic",
+
       "duration": "2022-2024"
     }
   ],
@@ -148,6 +158,28 @@
       "durationStart": "01/01/2024",
       "durationEnd": "04/06/2024",
       "description": "As part of my Final Year Project (PFE) as a Full Stack Developer, I worked on a range of projects, including e-commerce platforms, library management systems, and portfolio websites. My responsibilities involved collaborating closely with stakeholders to define project requirements, designing and developing end-to-end web solutions, and ensuring optimal system performance. This project allowed me to apply theoretical knowledge in a practical setting and enhanced my skills in full-stack development."
+    }
+  ],
+
+  "hobbies": [
+    {
+      "name": "football"
+    },
+    {
+      "name": "videogames"
+    },
+    {
+      "name": "photography"
+    },
+
+    {
+      "name": "reading"
+    },
+    {
+      "name": "hiking"
+    },
+    {
+      "name": "coding"
     }
   ]
 }

@@ -17,7 +17,7 @@ export const Page: FC<PageProps> = ({ children, variant, className }) => {
         {
           "min-w-[210mm] w-[210mm] h-[297mm]": variant === "A4",
         },
-        className,
+        className
       )}
     >
       {children}
