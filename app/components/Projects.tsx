@@ -7,7 +7,7 @@ import { SectionTitle } from "./atoms/SectionTitle";
 import Link from "next/link";
 
 type ProjectsProps = {
-  projects?: ProjectModel[];
+  projects: ProjectModel[];
 };
 
 const Projects: FC<ProjectsProps> = ({ projects }) => {
