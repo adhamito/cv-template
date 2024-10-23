@@ -14,16 +14,20 @@ export const SkillModalTrigger: FC<SkillModalTriggerProps> = ({
   const { setOpen } = useModal();
   return (
     <div
-      className="flex flex-col justify-center items-center cursor-pointer"
+      className="flex flex-col justify-center items-center cursor-pointer group"
       key={skill.name}
       onClick={() => {
         setOpen(true);
         setSelectSkill(skill);
       }}
     >
-      <TechnologyIcon size={25} className="text-lg" technology={skill.name} />
+      <TechnologyIcon
+        size={25}
+        className="text-lg group"
+        technology={skill.name}
+      />
       <span>
-        <strong className="">{skill.name}</strong>
+        <strong className="group-hover:text-[#E6AD00]">{skill.name}</strong>
       </span>
     </div>
   );
