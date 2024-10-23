@@ -9,7 +9,6 @@ type CommentData = {
   description: string;
 };
 
-// Helper function to create a comment
 const createComment = async (data: CommentData) => {
   try {
     const response = await databases.createDocument(
@@ -25,7 +24,6 @@ const createComment = async (data: CommentData) => {
   }
 };
 
-// Helper function to fetch comments
 const getComments = async () => {
   try {
     const response = await databases.listDocuments(
@@ -39,7 +37,6 @@ const getComments = async () => {
   }
 };
 
-// POST handler to create a comment
 export async function POST(req: Request) {
   try {
     const { name, email, description } = await req.json();
@@ -53,13 +50,12 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error("Error in POST handler:", error);
     return NextResponse.json(
-      { error: "Failed to create comment" },
+      { error: `Failed to create comment: ${error.message}` },
       { status: 500 }
     );
   }
 }
 
-// GET handler to fetch comments
 export async function GET() {
   try {
     const comments = await getComments();
@@ -71,7 +67,7 @@ export async function GET() {
   } catch (error) {
     console.error("Error in GET handler:", error);
     return NextResponse.json(
-      { error: "Failed to fetch comments" },
+      { error: `Failed to fetch comments: ${error.message}` },
       { status: 500 }
     );
   }

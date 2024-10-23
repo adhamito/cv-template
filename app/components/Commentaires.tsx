@@ -1,9 +1,10 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { CommentModal } from "./modals/CommentModal";
 import { CommentModalTrigger } from "./modals/CommentModalTrigger";
 import { Modal } from "./ui/animated-modal";
+import Image from "next/image";
 
 const Commentaires = () => {
   const [name, setName] = useState("");
@@ -94,13 +95,15 @@ const Commentaires = () => {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <li className="py-3 px-4 sm:py-4 mb-4 shadow-xl   ">
+                  <li className="py-3 px-4 sm:py-4 mb-4 shadow-xl">
                     <div className="flex items-center">
                       <div className="flex-shrink-0">
-                        <img
-                          className="w-8 h-8 rounded-full"
-                          src="https://i.pinimg.com/originals/a0/e5/c5/a0e5c5602434853db7d94889eb65a106.gif" // Update with actual profile picture source if available
+                        <Image
+                          className="rounded-full"
+                          src="https://i.pinimg.com/originals/a0/e5/c5/a0e5c5602434853db7d94889eb65a106.gif"
                           alt={`${comment.name} image`}
+                          width={32}
+                          height={32}
                         />
                       </div>
                       <div className="flex-1 min-w-0 ms-4">
