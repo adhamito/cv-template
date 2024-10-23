@@ -22,11 +22,17 @@ export const Education: FC<EducationProps> = ({
       transition={{ duration: 0.8, ease: "easeOut" }}
       data-index={index}
     >
-      <p className="font-semibold">{education.degree}</p>
-      <p>{education.major ? `in ${education.major}` : ""}</p>
-      <p>
-        {education.institution}, {education.duration}
-      </p>
+      <div className="group">
+        <p className="font-semibold group-hover:text-[#E6AD00]">
+          {education.degree}
+        </p>
+        <p className="group">
+          {education.major ? `in ${education.major}` : ""}
+        </p>
+        <p className="group">
+          {education.institution}, {education.duration}
+        </p>
+      </div>
     </motion.li>
   );
 };
