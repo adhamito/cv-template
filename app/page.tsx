@@ -18,16 +18,19 @@ export default function Home() {
   return (
     <div className="">
       <AuroraHero>
-        <div className="py-14 bg-transparent flex flex-col gap-3 justify-center items-center relative z-10">
+        <div className="py-14  bg-transparent flex flex-col gap-3 justify-center items-center relative z-10  ">
           <NavBar />
-          <Page variant="A4" className="flex flex-col">
-            <div className="flex-none flex flex-row justify-center items-center relative">
+          <Page variant="A4" className="flex flex-col ">
+            <div className="flex-none flex md:flex-row  justify-center items-center relative">
               <Header info={data.personalInfo} />
             </div>
-            <main className="grow flex flex-row justify-stretch items-start w-full">
+            <main
+              className="grow flex md:flex-row flex-col justify-stretch items-center w-full 
+            md:border-none border-l-2 border-gold-500 p-4"
+            >
               <div
                 id="left-side"
-                className="flex-grow w-[70mm] h-full p-6 flex flex-col justify-around"
+                className="flex-grow md:w-[70mm] h-full p-6 flex flex-col justify-around"
               >
                 <ContactDetails
                   contactDetails={data.personalInfo.contactDetails}
@@ -35,20 +38,23 @@ export default function Home() {
                 <Skills skills={data.skills} projects={data.projects} />
                 <Educations educations={data.educations.reverse()} />
               </div>
-              <div className="w-full h-full border-l-2 border-gold-500 p-4">
+              <div className="w-full h-full md:border-l-2 border-gold-500 p-4">
                 <About about={data.personalInfo.about} />
                 <WorkExperience experiences={data.experiences} />
                 <Hobbies hobbies={data.hobbies} />
               </div>
             </main>
           </Page>
-          <Page variant="A4">
+          <Page
+            variant="A4"
+            className="md:border-none border-l-2 border-gold-500"
+          >
             <Projects projects={data.projects.reverse()} />
           </Page>
         </div>
-        <div>
+        <Page>
           <Commentaires />
-        </div>
+        </Page>
       </AuroraHero>
     </div>
   );
