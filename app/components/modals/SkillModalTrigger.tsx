@@ -23,11 +23,11 @@ export const SkillModalTrigger: FC<SkillModalTriggerProps> = ({
     >
       <TechnologyIcon
         size={25}
-        className="text-lg group first-letter:capitalize"
+        className="text-lg group "
         technology={skill.name}
       />
       <span>
-        <strong className="text-[#E6AD00] md:text-lg text-sm ">
+        <strong className="group-hover:text-[#E6AD00] md:text-lg text-sm cursor-pointer ">
           {skill.name}
         </strong>
       </span>
