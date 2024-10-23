@@ -80,7 +80,7 @@ const Commentaires = () => {
       <div className="mt-8">
         <div className="relative w-full flex flex-col items-center mt-8">
           <h2 className="text-white font-semibold text-2xl mb-2">Comments</h2>
-          <div className="relative w-full md:h-28 overflow-hidden rounded-lg ">
+          <div className="relative w-full md:h-28 h-28 overflow-hidden rounded-lg ">
             {comments.length > 0 ? (
               comments.map((comment, index) => (
                 <motion.div
@@ -95,7 +95,7 @@ const Commentaires = () => {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <li className="py-3 px-4 sm:py-4 mb-4 shadow-xl">
+                  <li className="md:py-3 md:px-4 sm:py-4 mb-4 shadow-xl px-4">
                     <div className="flex items-center">
                       <div className="flex-shrink-0">
                         <Image
@@ -114,7 +114,7 @@ const Commentaires = () => {
                           {comment.email}
                         </p>
                       </div>
-                      <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                      <div className="inline-flex items-center md:text-base text-xs font-semibold text-gray-900 dark:text-white">
                         {comment.description}
                       </div>
                     </div>

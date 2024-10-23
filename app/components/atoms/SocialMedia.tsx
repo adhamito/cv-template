@@ -31,7 +31,7 @@ const SocialMediaIcons = [
   },
   {
     name: "instagram",
-    url: "https://www.instagram.com/rebel-adham/",
+    url: "https://www.instagram.com/rebel_adham/",
     icon: <FaInstagram size={30} className="text-[#F395EB]" />,
   },
 ];

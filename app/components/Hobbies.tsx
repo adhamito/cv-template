@@ -3,6 +3,7 @@ import { FC } from "react";
 import { motion } from "framer-motion"; // Import framer-motion
 import { HobbiesModel } from "../models/index";
 import { HobbiesIcon } from "./atoms/HobbiesIcon";
+import { SectionTitle } from "./atoms/SectionTitle";
 
 type HobbiesProps = {
   hobbies: HobbiesModel[];
@@ -12,7 +13,8 @@ type HobbiesProps = {
 export const Hobbies: FC<HobbiesProps> = ({ hobbies }) => {
   return (
     <div className="text-white">
-      <h1 className="text-2xl m-2 border-b-2 border-[#E6AD00] ">Hobbies</h1>
+      <SectionTitle title="Hobbies" />
+
       <div className="grid grid-cols-3 justify-center items-center gap-2 ">
         {hobbies.map((hobbie) => (
           <motion.div

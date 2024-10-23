@@ -45,11 +45,11 @@ export const Header: FC<HeaderProps> = ({ info }) => {
 
   return (
     <header className="text-center my-2 py-1 text-white  ">
-      <div className="h-16 mb-2" key={info.name}>
-        <h1 className="text-4xl font-bold">{info.name}</h1>
+      <div className="md:h-16 h-16 mb-2" key={info.name}>
+        <h1 className="md:text-4xl text-2xl  font-bold">{info.name}</h1>
 
         <motion.div
-          className="text-2xl font-light text-[#E6AD00]"
+          className="md:text-2xl text-xl font-light text-[#E6AD00]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >

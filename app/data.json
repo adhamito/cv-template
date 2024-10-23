@@ -11,7 +11,7 @@
       "email": "aalmechkor2@gmail.com",
       "location": "Tangier, Morocco"
     },
-    "about": "I am Adham Almechkor, a passionate Full Stack Developer currently pursuing a degree in Digital Development. At 23 years old, I am driven by a desire to innovate and create solutions that enhance the digital landscape. My journey in digital development has equipped me with a solid foundation in programming languages such as HTML, CSS, JavaScript, Python, and React."
+    "about": "   passionate Full Stack Developer currently pursuing a degree in Digital Development. At 24   years old, I am driven by a desire to innovate and create solutions that enhance the digital landscape. My journey in digital development has equipped me with a solid foundation in programming languages such as HTML, CSS, JavaScript, Python, and React."
   },
   "githubStats": {
     "skills": ["HTML", "CSS", "JavaScript", "TypeScript"]
@@ -109,12 +109,12 @@
       "description": "I have worked with Redux for 1.5 years to manage complex state across large React applications, ensuring clean, maintainable, and scalable code for front-end development."
     },
     {
-      "name": "next.js",
+      "name": "Next.js",
       "experience": "1 year",
       "description": "With 1 year of experience in next.js, I have built SEO-optimized, server-side rendered (SSR) applications, including static generation and dynamic routing for performant websites."
     },
     {
-      "name": "nest.js",
+      "name": "Nest.js",
       "experience": "1 year",
       "description": "I have been using Nest.js for 1 year now. I have experience building scalable, maintainable backend applications using TypeScript, leveraging its powerful features like dependency injection, decorators, and modular architecture to create robust REST APIs and microservices."
     }
