@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <main
               className="grow flex md:flex-row flex-col justify-stretch items-center w-full 
-            md:border-none border-l-2 border-gold-500 p-4"
+            md:border-none border-l-2 border-gold-500 p-2"
             >
               <div
                 id="left-side"
@@ -47,12 +47,12 @@ export default function Home() {
           </Page>
           <Page
             variant="A4"
-            className="md:border-none border-l-2 border-gold-500"
+            className="md:border-none border-l-2 border-gold-500 "
           >
             <Projects projects={data.projects.reverse()} />
           </Page>
         </div>
-        <Page>
+        <Page className="border-none border-l-2 border-gold-500 px-2">
           <Commentaires />
         </Page>
       </AuroraHero>
