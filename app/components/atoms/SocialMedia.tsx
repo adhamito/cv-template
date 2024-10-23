@@ -49,7 +49,7 @@ export const SocialMedia: FC = () => {
               {icon.icon}
             </div>
             <span
-              className="absolute -bottom-8 px-3 py-1 bg-transparent text-[#E6AD00] 
+              className="absolute -bottom-10 px-3 py-1 bg-transparent text-[#E6AD00] 
             text-sm font-semibold rounded opacity-0 group-hover:opacity-100
              group-hover:translate-y-[-10px] transition-easeOut duration-300"
             >
