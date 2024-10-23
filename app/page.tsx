@@ -13,6 +13,7 @@ import Page from "./components/layouts/Page";
 import { cn } from "./lib/utils";
 import { Hobbies } from "./components/Hobbies";
 import Commentaires from "./components/Commentaires";
+import { Robot } from "./components/Robot";
 
 export default function Home() {
   return (
@@ -20,28 +21,32 @@ export default function Home() {
       <AuroraHero>
         <div className="py-14 bg-transparent flex flex-col gap-3 justify-center items-center relative z-10">
           <NavBar />
-          <Page variant="A4" className="flex flex-col">
-            <div className="flex-none flex flex-row justify-center items-center relative">
-              <Header info={data.personalInfo} />
-            </div>
-            <main className="grow flex flex-row justify-stretch items-start w-full">
-              <div
-                id="left-side"
-                className="flex-grow w-[70mm] h-full p-6 flex flex-col justify-around"
-              >
-                <ContactDetails
-                  contactDetails={data.personalInfo.contactDetails}
-                />
-                <Skills skills={data.skills} projects={data.projects} />
-                <Educations educations={data.educations.reverse()} />
+          <div className="flex flex-row justify-center items-center gap-2">
+            <Robot />
+            <Page variant="A4" className="flex flex-col">
+              <div className="flex-none flex flex-row justify-center items-center relative">
+                <Header info={data.personalInfo} />
               </div>
-              <div className="w-full h-full border-l-2 border-gold-500 p-4">
-                <About about={data.personalInfo.about} />
-                <WorkExperience experiences={data.experiences} />
-                <Hobbies hobbies={data.hobbies} />
-              </div>
-            </main>
-          </Page>
+              <main className="grow flex flex-row justify-stretch items-start w-full">
+                <div
+                  id="left-side"
+                  className="flex-grow w-[70mm] h-full p-6 flex flex-col justify-around"
+                >
+                  <ContactDetails
+                    contactDetails={data.personalInfo.contactDetails}
+                  />
+                  <Skills skills={data.skills} projects={data.projects} />
+                  <Educations educations={data.educations.reverse()} />
+                </div>
+                <div className="w-full h-full border-l-2 border-gold-500 p-4">
+                  <About about={data.personalInfo.about} />
+                  <WorkExperience experiences={data.experiences} />
+                  <Hobbies hobbies={data.hobbies} />
+                </div>
+              </main>
+            </Page>
+          </div>
+
           <Page variant="A4">
             <Projects projects={data.projects.reverse()} />
           </Page>
