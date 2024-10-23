@@ -1,4 +1,4 @@
-// /pages/api/comments.ts
+"use server";
 import { Databases, ID } from "appwrite";
 import { databases } from "../../lib/appwrite_client";
 import { NextResponse } from "next/server";
@@ -9,11 +9,12 @@ type CommentData = {
   description: string;
 };
 
-export const createComment = async (data: CommentData) => {
+// Helper function to create a comment
+const createComment = async (data: CommentData) => {
   try {
     const response = await databases.createDocument(
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID as string,
-      "671789a6000ca6df91f5", // Collection ID
+      "671789a6000ca6df91f5",
       ID.unique(),
       data
     );
@@ -24,7 +25,7 @@ export const createComment = async (data: CommentData) => {
   }
 };
 
-export const getComments = async () => {
+const getComments = async () => {
   try {
     const response = await databases.listDocuments(
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID as string,
@@ -37,6 +38,7 @@ export const getComments = async () => {
   }
 };
 
+// POST handler to create a comment
 export async function POST(req: Request) {
   try {
     const { name, email, description } = await req.json();
@@ -56,6 +58,7 @@ export async function POST(req: Request) {
   }
 }
 
+// GET handler to fetch comments
 export async function GET() {
   try {
     const comments = await getComments();
