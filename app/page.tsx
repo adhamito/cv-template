@@ -12,6 +12,7 @@ import data from "./data.json";
 import Page from "./components/layouts/Page";
 import { cn } from "./lib/utils";
 import { Hobbies } from "./components/Hobbies";
+import Commentaires from "./components/Commentaires";
 
 export default function Home() {
   return (
@@ -42,8 +43,11 @@ export default function Home() {
             </main>
           </Page>
           <Page variant="A4">
-            <Projects projects={data.projects} />
+            <Projects projects={data.projects.reverse()} />
           </Page>
+        </div>
+        <div>
+          <Commentaires />
         </div>
       </AuroraHero>
     </div>
