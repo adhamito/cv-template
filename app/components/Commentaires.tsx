@@ -95,7 +95,7 @@ const Commentaires = () => {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <li className="md:py-3 md:px-4 sm:py-4 mb-4 shadow-xl px-4">
+                  <li className="md:py-3 md:px-4 sm:py-4 mb-4 shadow-xl px-1 ">
                     <div className="flex items-center">
                       <div className="flex-shrink-0">
                         <Image
@@ -106,7 +106,7 @@ const Commentaires = () => {
                           height={32}
                         />
                       </div>
-                      <div className="flex-1 min-w-0 ms-4 p-4">
+                      <div className="flex-1 min-w-0 ms-4 px-4">
                         <p className="md:text-sm text-xs  font-medium text-gray-900 truncate dark:text-white">
                           {comment.name}
                         </p>
