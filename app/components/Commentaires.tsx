@@ -106,15 +106,15 @@ const Commentaires = () => {
                           height={32}
                         />
                       </div>
-                      <div className="flex-1 min-w-0 ms-4 px-4">
-                        <p className="md:text-sm text-xs  font-medium text-gray-900 truncate dark:text-white">
+                      <div className="flex-1 min-w-0 ms-4 px-2">
+                        <p className="md:text-sm text-xs  font-medium text-gray-200">
                           {comment.name}
                         </p>
-                        <p className="md:text-sm text-xs text-gray-500 truncate dark:text-gray-400">
+                        <p className="md:text-sm text-xs text-gray-400 ">
                           {comment.email}
                         </p>
                       </div>
-                      <div className="inline-flex items-center md:text-base text-xs font-semibold text-gray-400">
+                      <div className="inline-flex items-center md:text-base text-xs font-semibold text-gray-300">
                         {comment.description}
                       </div>
                     </div>
