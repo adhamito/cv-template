@@ -52,7 +52,7 @@ export default function Home() {
             <Projects projects={data.projects.reverse()} />
           </Page>
         </div>
-        <Page className="border-none border-l-2 border-gold-500 px-2">
+        <Page className="md:border-none border-l-2 border-gold-500 px-2">
           <Commentaires />
         </Page>
       </AuroraHero>
