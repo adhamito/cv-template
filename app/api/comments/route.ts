@@ -14,7 +14,7 @@ const createComment = async (data: CommentData) => {
   try {
     const response = await databases.createDocument(
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID as string,
-      "671789a6000ca6df91f5",
+      "671789a6000ca6df91f5", // Collection ID
       ID.unique(),
       data
     );
@@ -25,11 +25,12 @@ const createComment = async (data: CommentData) => {
   }
 };
 
+// Helper function to fetch comments
 const getComments = async () => {
   try {
     const response = await databases.listDocuments(
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID as string,
-      "671789a6000ca6df91f5"
+      "671789a6000ca6df91f5" // Collection ID
     );
     return response.documents;
   } catch (error: any) {
