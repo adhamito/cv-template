@@ -38,7 +38,7 @@ const SocialMediaIcons = [
 
 export const SocialMedia: FC = () => {
   return (
-    <div className="flex justify-center gap-4 py-4">
+    <div className="flex justify-center gap-4 py-4 cursor-pointer">
       {SocialMediaIcons.map((icon) => (
         <Link href={icon.url} key={icon.name} target="_blank" rel="noreferrer">
           <div className="group relative flex flex-col items-center">
