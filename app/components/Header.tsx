@@ -44,12 +44,12 @@ export const Header: FC<HeaderProps> = ({ info }) => {
   }, [charIndex, isDeleting, titleKeys, currentTitleIndex]);
 
   return (
-    <header className="text-center my-2 py-1 text-white  ">
+    <header className="text-center xl:my-4 xl:py-4 text-white  ">
       <div className="md:h-16 h-16 mb-2" key={info.name}>
-        <h1 className="md:text-4xl text-2xl  font-bold">{info.name}</h1>
+        <h1 className="md:text-4xl text-2xl xl:mb-2  font-bold">{info.name}</h1>
 
         <motion.div
-          className="md:text-2xl text-xl font-light text-[#E6AD00]"
+          className="md:text-2xl text-xl font-light xl:mb-4 text-[#E6AD00]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
