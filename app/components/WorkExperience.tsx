@@ -9,7 +9,7 @@ type WorkExperienceProps = {
 
 export const WorkExperience: FC<WorkExperienceProps> = ({ experiences }) => {
   return (
-    <section className="-lg m-1 text-left  xl:p-6">
+    <section className="-lg m-1 text-left  ">
       <SectionTitle title="Work Experience" />
       <div className="m-2">
         {experiences.map((item) => (
