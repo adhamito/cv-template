@@ -76,8 +76,8 @@ const Commentaires = () => {
   }, [comments.length]);
 
   return (
-    <div className="w-full p-8 bg-[#111827]">
-      <div className="mt-8">
+    <div className="w-full p-6 bg-[#111827]">
+      <div className="mt-4">
         <div className="relative w-full flex flex-col items-center mt-8">
           <h2 className="text-white font-semibold text-2xl mb-2">Comments</h2>
           <div className="relative w-full md:h-28 h-32 overflow-hidden rounded-lg ">
@@ -106,8 +106,11 @@ const Commentaires = () => {
                           height={32}
                         />
                       </div>
-                      <div className=" w-full flex flex-row justify-between items-center gap-2 ">
-                        <div className="flex-1 md:min-w-0 ms-4">
+                      <div
+                        className=" w-full flex md:flex-row md:justify-arround md:gap-4 md:items-center md:text-start 
+                      flex-col justify-center gap-1 items-center p-2 text-center "
+                      >
+                        <div className="flex-1 md:p-1 ">
                           <p className="md:text-sm text-xs  font-medium text-gray-200">
                             {comment.name}
                           </p>
@@ -115,7 +118,7 @@ const Commentaires = () => {
                             {comment.email}
                           </p>
                         </div>
-                        <div className=" items-center md:text-base text-xs font-light text-gray-300">
+                        <div className=" text-center md:text-base text-xs font-light text-gray-300">
                           {comment.description}
                         </div>
                       </div>

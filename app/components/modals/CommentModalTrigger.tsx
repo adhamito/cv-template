@@ -23,7 +23,7 @@ export const CommentModalTrigger: FC<CommentModalTriggerProps> = ({
 
   return (
     <div className=" text-start" onClick={handleOpenModal}>
-      <button className=" px-3 py-1 border-2 border-[#E6AD00] bg-transparent text-[#E6AD00] uppercase text-lg transition duration-300 focus:outline-none">
+      <button className="relative px-4 py-2 border-2 border-[#E6AD00] bg-transparent text-[#E6AD00] uppercase text-base transition duration-300 focus:outline-none">
         add comment
         <span
           className="absolute inset-0 transform rotate-45 bg-[#17C3B2] transition-all duration-500 ease-in-out"
