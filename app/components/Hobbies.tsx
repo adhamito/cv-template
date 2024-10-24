@@ -15,7 +15,7 @@ export const Hobbies: FC<HobbiesProps> = ({ hobbies }) => {
     <div className="text-white">
       <SectionTitle title="Hobbies" />
 
-      <div className="grid grid-cols-3 justify-center items-center gap-2 ">
+      <div className="grid grid-cols-3 justify-center items-center gap-2 xl:space-y-6  ">
         {hobbies.map((hobbie) => (
           <motion.div
             key={hobbie.name}
@@ -26,7 +26,7 @@ export const Hobbies: FC<HobbiesProps> = ({ hobbies }) => {
             whileHover={{ scale: 1.2, rotate: 10 }}
             whileTap={{ scale: 0.95 }}
           >
-            <HobbiesIcon hobbie={hobbie.name} size={35} />
+            <HobbiesIcon hobbie={hobbie.name} size={40} />
             <span className="uppercase font-light text-[#E6AD00]">
               {hobbie.name}
             </span>
