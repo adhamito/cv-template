@@ -10,7 +10,7 @@ type HeaderProps = {
 };
 
 export const Header: FC<HeaderProps> = ({ info }) => {
-  const titleKeys = Object.values(info.title); // Get title parts dynamically
+  const titleKeys = Object.values(info.title) as string[]; // Get title parts dynamically with type assertion
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -20,7 +20,7 @@ export const Header: FC<HeaderProps> = ({ info }) => {
     let typingTimeout: NodeJS.Timeout;
 
     const typeTitle = () => {
-      const currentTitle = titleKeys[currentTitleIndex];
+      const currentTitle = titleKeys[currentTitleIndex] as string;
 
       if (!isDeleting && charIndex < currentTitle.length) {
         setDisplayText((prev) => prev + currentTitle[charIndex]);
