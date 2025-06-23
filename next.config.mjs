@@ -8,6 +8,17 @@ const nextConfig = {
       "i.pinimg.com",
     ],
   },
+  // Disable symlinks to fix Windows build permission issues
+  output: 'standalone',
+  experimental: {
+    // Disable symlinks during build process
+    outputFileTracingRoot: process.cwd(),
+    outputFileTracingExcludes: {
+      '*': [
+        'node_modules/**/*',
+      ],
+    },
+  },
 };
 
 export default nextConfig;
