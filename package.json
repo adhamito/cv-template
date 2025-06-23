@@ -27,6 +27,7 @@
     "react-lottie-player": "^2.1.0",
     "react-tooltip": "^5.28.0",
     "simplex-noise": "^4.0.3",
+    "styled-jsx": "^5.1.7",
     "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
