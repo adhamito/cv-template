@@ -54,68 +54,100 @@
       "path": "https://github.com/adhamito/cv-template",
       "img": "/assets/5.jpg",
       "url": "https://cv-templateadhamalmechkor.netlify.app"
+    },
+    {
+      "name": "americanawardsummit",
+      "technologies": ["Next.js", "Tailwind CSS", "JavaScript"],
+      "description": "American Award Summit is a dynamic and elegant website built to showcase an international event celebrating excellence across various fields. Developed with Next.js for fast performance and smooth navigation, and styled with Tailwind CSS for a responsive and modern interface, this project captures the prestige and professionalism of the summit. It features animated sections, well-structured content blocks, and a clean layout that highlights event details, speakers, and registration information. The platform is optimized for both desktop and mobile, making it an ideal promotional site for high-profile conferences or award ceremonies.",
+      "path": "https://americanawardsummit.com",
+      "img": "/assets/6.jpg",
+      "url": "https://americanawardsummit.com"
+    },
+    {
+      "name": "saudivoyage",
+      "technologies": ["WordPress", "PHP", "Elementor", "CSS"],
+      "description": "SaudiVoyage is a visually captivating and informative travel website dedicated to showcasing cultural and spiritual journeys to Saudi Arabia. Built with WordPress and styled using Elementor and custom CSS, the site offers a smooth and elegant user experience across devices. It features engaging blog content, beautiful photo galleries, and detailed guides about Omra and Hajj, making it a valuable resource for pilgrims and cultural travelers. The responsive design and SEO-friendly structure ensure excellent performance and visibility for a global audience.",
+      "path": "https://saudivoyage.fr",
+      "img": "/assets/saudivoyage.jpg",
+      "url": "https://saudivoyage.fr"
+    },
+    {
+      "name": "nttdatafront",
+      "technologies": ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+      "description": "NTT Data Front is the frontend of a powerful desktop application designed to streamline and automate data generation tasks. Built using React with Next.js and styled with Tailwind CSS, the interface is modern, responsive, and optimized for user productivity. TypeScript ensures maintainability and type safety across the codebase. The application features dynamic forms, dashboard views, client data visualization, and Excel import/export capabilities, making it ideal for enterprise-level data management workflows.",
+      "path": "https://github.com/adhamito/nttdatafront",
+      "img": "/assets/nttdata.jpg",
+      "url": "https://github.com/adhamito/nttdatafront"
+    },
+    {
+      "name": "USmileys",
+      "technologies": ["React", "Tailwind CSS", "Framer Motion", "JavaScript"],
+      "description": "USmileys is a fun and interactive web application that lets users explore and enjoy a variety of animated emojis and expressions. Built with React and styled using Tailwind CSS, it offers a smooth and engaging UI experience enhanced with Framer Motion animations. Perfect for users looking to brighten their day with cheerful visuals.",
+      "path": "https://github.com/adhamito/usmileys",
+      "img": "/assets/usmileys.jpg",
+      "url": "https://usmileys.netlify.app"
     }
   ],
 
   "skills": [
     {
       "name": "HTML",
-      "experience": "6 years",
+      "experience": "7 years",
       "description": "I have been using HTML for 6 years now. I have a deep understanding of semantic HTML and have used it in various projects, from simple websites to complex web applications."
     },
     {
       "name": "CSS",
-      "experience": "3 years",
+      "experience": "4 years",
       "description": "With 3 years of CSS experience, I can create responsive, accessible, and visually appealing web pages. I have expertise in using CSS frameworks like Bootstrap and Tailwind, as well as custom styling."
     },
     {
       "name": "JavaScript",
-      "experience": "3 years",
+      "experience": "4 years",
       "description": "I have 3 years of experience with JavaScript, building dynamic, interactive web applications. I am skilled in both vanilla JavaScript and modern frameworks such as React and Node.js."
     },
     {
       "name": "React",
-      "experience": "2 years",
+      "experience": "3 years",
       "description": "I have been working with React for 2 years, building reusable components and single-page applications (SPAs). I have experience managing state with Redux and building scalable web apps."
     },
     {
       "name": "Node.js",
-      "experience": "2 years",
+      "experience": "4 years",
       "description": "I have 2 years of experience working with Node.js, creating server-side applications, APIs, and handling asynchronous operations. I am comfortable working with Express and integrating Node.js with databases like MongoDB and MySQL."
     },
     {
       "name": "Python",
-      "experience": "3 years",
+      "experience": "5 years",
       "description": "With 3 years of Python experience, I have worked on automation scripts, data analysis, and web development. I have also used Python frameworks like Django and Flask for backend development."
     },
     {
       "name": "Laravel",
-      "experience": "1 year",
+      "experience": "2 year",
       "description": "I have used Laravel for a year, primarily for backend development, building robust, secure web applications and RESTful APIs with efficient database handling."
     },
     {
       "name": "Git",
-      "experience": "3 years",
+      "experience": "4 years",
       "description": "I have been using Git for 3 years, collaborating with teams and managing version control for projects. I am familiar with branching, merging, and resolving conflicts in Git repositories."
     },
     {
       "name": "Tailwind",
-      "experience": "1 year",
+      "experience": "4 year",
       "description": "Over the past year, I have used Tailwind CSS to quickly design and develop responsive, mobile-first web pages with utility-first styling, making CSS development more efficient."
     },
     {
       "name": "Redux",
-      "experience": "1.5 years",
+      "experience": "3 years",
       "description": "I have worked with Redux for 1.5 years to manage complex state across large React applications, ensuring clean, maintainable, and scalable code for front-end development."
     },
     {
       "name": "Next.js",
-      "experience": "1 year",
+      "experience": "3 year",
       "description": "With 1 year of experience in next.js, I have built SEO-optimized, server-side rendered (SSR) applications, including static generation and dynamic routing for performant websites."
     },
     {
       "name": "Nest.js",
-      "experience": "1 year",
+      "experience": "2 year",
       "description": "I have been using Nest.js for 1 year now. I have experience building scalable, maintainable backend applications using TypeScript, leveraging its powerful features like dependency injection, decorators, and modular architecture to create robust REST APIs and microservices."
     }
   ],
@@ -134,7 +166,6 @@
     {
       "degree": "English Studies",
       "institution": "Uskudar University",
-
       "duration": "2020-2021"
     },
     {
@@ -155,9 +186,25 @@
       "title": "Software Development Intern",
       "company": "The Bridger",
       "location": "Tangier, Morocco",
-      "durationStart": "01/01/2024",
+      "durationStart": "01/04/2024",
       "durationEnd": "04/06/2024",
-      "description": "As part of my Final Year Project (PFE) as a Full Stack Developer, I worked on a range of projects, including e-commerce platforms, library management systems, and portfolio websites. My responsibilities involved collaborating closely with stakeholders to define project requirements, designing and developing end-to-end web solutions, and ensuring optimal system performance. This project allowed me to apply theoretical knowledge in a practical setting and enhanced my skills in full-stack development."
+      "description": "During my Final Year Project (PFE) internship at The Bridger, I contributed to the design and development of several full-stack applications, including e-commerce platforms, digital library systems, and personal portfolio websites. I collaborated closely with stakeholders to gather functional requirements, translate them into technical solutions, and deliver scalable and maintainable web applications. This experience allowed me to bridge academic knowledge with real-world application, sharpening my skills in both front-end and back-end development using modern tools and frameworks."
+    },
+    {
+      "title": "Full Stack Developer Intern",
+      "company": "MediaCaris",
+      "location": "Tangier, Morocco",
+      "durationStart": "15/09/2024",
+      "durationEnd": "15/02/2025",
+      "description": "At MediaCaris, I was entrusted with full-stack development responsibilities for a range of projects including e-commerce solutions, library management systems, and dynamic portfolio sites. My role spanned the entire development lifecycle—from requirement analysis and UI/UX design to coding, testing, and deployment. Leveraging technologies such as Laravel, React, and Tailwind CSS, I built responsive, performance-optimized applications. This role significantly deepened my understanding of software architecture and sharpened my ability to build robust, user-centric web experiences."
+    },
+    {
+      "title": "Full Stack Developer Intern",
+      "company": "NTT Data",
+      "location": "Tétouan, Morocco",
+      "durationStart": "15/02/2025",
+      "durationEnd": "Present",
+      "description": "As a Full Stack Developer Intern at NTT Data, I am currently engaged in building enterprise-level web applications with a focus on performance, security, and scalability. My responsibilities include gathering technical specifications, architecting database structures, and implementing user interfaces with clean and maintainable code. Using Laravel, React, TypeScript, and Tailwind CSS, I contribute to cross-functional teams in delivering high-quality digital solutions that meet both user needs and business goals. This role continues to enhance my professional growth and technical depth within a collaborative agile environment."
     }
   ],
 

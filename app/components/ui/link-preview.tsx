@@ -1,6 +1,9 @@
 "use client";
-import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
-import Image from "next/image";
+import * as HoverCardPrimitiveOriginal from "@radix-ui/react-hover-card";
+// Type assertion to fix compatibility issues
+const HoverCardPrimitive = HoverCardPrimitiveOriginal as any;
+import NextImage from "next/image";
+const Image = NextImage as any; // Type assertion to fix compatibility issue
 import { encode } from "qss";
 import React from "react";
 import {
@@ -9,7 +12,8 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-import Link from "next/link";
+import NextLink from "next/link";
+const Link = NextLink as any; // Type assertion to fix compatibility issue
 import { cn } from "../../lib/utils";
 
 type LinkPreviewProps = {
@@ -19,7 +23,7 @@ type LinkPreviewProps = {
   width?: number;
   height?: number;
   quality?: number;
-  layout?: string;
+  style?: React.CSSProperties;
 } & (
   | { isStatic: true; imageSrc: string }
   | { isStatic?: false; imageSrc?: never }
@@ -32,7 +36,7 @@ export const LinkPreview = ({
   width = 200,
   height = 125,
   quality = 50,
-  layout = "fixed",
+  style,
   isStatic = false,
   imageSrc = "",
 }: LinkPreviewProps) => {
@@ -83,9 +87,9 @@ export const LinkPreview = ({
             width={width}
             height={height}
             quality={quality}
-            layout={layout}
             priority={true}
             alt="hidden image"
+            style={style}
           />
         </div>
       ) : null}
@@ -141,10 +145,10 @@ export const LinkPreview = ({
                     width={width}
                     height={height}
                     quality={quality}
-                    layout={layout}
                     priority={true}
                     className="rounded-lg"
                     alt="preview image"
+                    style={style}
                   />
                 </Link>
               </motion.div>
