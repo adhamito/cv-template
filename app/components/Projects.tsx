@@ -22,14 +22,15 @@ const Projects: FC<ProjectsProps> = ({ projects }) => {
       <div className="flex flex-col space-y-8">
         {projects?.map((project, index) =>
           project.url ? (
-            <Link href={project.url} key={index} target="_blank">
+            <div key={index}>
               <Project
                 key={project.name}
                 project={project}
                 index={index}
                 visible={visibleElements.includes(index.toString())}
+                // Pass URL to component instead of wrapping with Link
               />
-            </Link>
+            </div>
           ) : (
             <div key={index}>
               <Project
