@@ -1,7 +1,14 @@
-"use server";
-import { Databases, ID } from "appwrite";
-import { databases } from "../../lib/appwrite_client";
+import { Databases, ID, Client } from "appwrite";
 import { NextResponse } from "next/server";
+
+// Initialize Appwrite client directly in the API route
+const client = new Client();
+
+client
+  .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT || "")
+  .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID || "");
+
+const databases = new Databases(client);
 
 type CommentData = {
   name: string;
