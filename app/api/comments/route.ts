@@ -4,13 +4,6 @@ import { NextResponse } from "next/server";
 // Initialize Appwrite client with better error handling
 const initializeAppwrite = () => {
   try {
-    // Log environment variables availability (not their values) for debugging
-    console.log('Environment variables check:', {
-      endpointExists: !!process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT,
-      projectIdExists: !!process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID,
-      databaseIdExists: !!process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID
-    });
-    
     const client = new Client();
     client
       .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT || "https://cloud.appwrite.io/v1")
