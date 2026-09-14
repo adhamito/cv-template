@@ -291,21 +291,52 @@ export const DownloadPDFButton = () => {
 
     sectionTitle("Work Experience");
     data.experiences.forEach((exp, idx) => {
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(10.5);
+      const titleLine = `${exp.title} — ${exp.company}`;
+      const titleLines: string[] = doc.splitTextToSize(titleLine, main.width);
+      // Measure the bold title's last line while the bold font is still
+      // active — getTextWidth uses whatever font is currently set.
+      const lastTitleLineWidth = doc.getTextWidth(titleLines[titleLines.length - 1]);
+
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(9);
+      const dateText = `${exp.durationStart} - ${exp.durationEnd}`;
+      const dateWidth = doc.getTextWidth(dateText);
+      // If the title/company text is short enough, the date shares its last
+      // line (right-aligned); otherwise the date gets its own line below,
+      // so a long company name can never collide with the date text.
+      const dateSharesLine = lastTitleLineWidth + 12 + dateWidth <= main.width;
+
       const { rendered, height: bulletsHeight } = measureBullets(exp.description);
       const spacing = idx < data.experiences.length - 1 ? 6 : 0;
-      ensureSpace(12 + 12 + bulletsHeight + spacing);
+      const headerHeight =
+        titleLines.length * 12 + (dateSharesLine ? 0 : 12) + 12;
+      ensureSpace(headerHeight + bulletsHeight + spacing);
 
       doc.setFont("helvetica", "bold");
       doc.setFontSize(10.5);
       doc.setTextColor(...DARK);
-      doc.text(`${exp.title} — ${exp.company}`, main.x, main.y);
+      titleLines.forEach((line, i) => {
+        doc.text(line, main.x, main.y);
+        if (i === titleLines.length - 1 && dateSharesLine) {
+          doc.setFont("helvetica", "normal");
+          doc.setFontSize(9);
+          doc.setTextColor(...GRAY);
+          doc.text(dateText, main.x + main.width - dateWidth, main.y);
+        }
+        main.y += 12;
+      });
+      if (!dateSharesLine) {
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(9);
+        doc.setTextColor(...GRAY);
+        doc.text(dateText, main.x + main.width - dateWidth, main.y);
+        main.y += 12;
+      }
       doc.setFont("helvetica", "normal");
-      doc.setFontSize(9);
-      doc.setTextColor(...GRAY);
-      const dateText = `${exp.durationStart} - ${exp.durationEnd}`;
-      doc.text(dateText, main.x + main.width - doc.getTextWidth(dateText), main.y);
-      main.y += 12;
       doc.setFontSize(9.5);
+      doc.setTextColor(...GRAY);
       doc.text(exp.location, main.x, main.y);
       main.y += 12;
       drawBullets(rendered);
@@ -314,9 +345,10 @@ export const DownloadPDFButton = () => {
 
     sectionTitle("Projects");
     [...data.projects].reverse().forEach(drawProjectEntry);
+    data.additionalProjects.forEach(drawProjectEntry);
 
     // ---------- Footer: page numbers on every page ----------
-    const pageCount = doc.internal.getNumberOfPages();
+    const pageCount = doc.getNumberOfPages();
     for (let i = 1; i <= pageCount; i++) {
       doc.setPage(i);
       doc.setFont("helvetica", "normal");

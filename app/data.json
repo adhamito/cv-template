@@ -69,22 +69,24 @@
       "path": "https://saudivoyage.fr",
       "img": "/assets/saudivoyage.jpg",
       "url": "https://saudivoyage.fr"
+    }
+  ],
+
+  "additionalProjects": [
+    {
+      "name": "Cambio Med Exchange Panel",
+      "technologies": ["React", "TypeScript", "Vite", "Appwrite"],
+      "description": "Freelance: real-time currency exchange rate display for TV screens, with offline-resilient polling and an Appwrite backend."
     },
     {
-      "name": "NTT Data Front",
-      "technologies": ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-      "description": "Frontend for an internal enterprise data-automation tool: dynamic forms, dashboard views, client data visualization, and Excel import/export.",
-      "path": "https://github.com/adhamito/nttdatafront",
-      "img": "/assets/nttdata.jpg",
-      "url": "https://github.com/adhamito/nttdatafront"
+      "name": "Auto-École ACHRIH",
+      "technologies": ["Next.js", "NestJS", "TypeScript"],
+      "description": "Freelance: full-stack driving school management system, with a NestJS API and a Next.js frontend for student enrollment and scheduling."
     },
     {
-      "name": "USmileys",
-      "technologies": ["React", "Tailwind CSS", "Framer Motion", "JavaScript"],
-      "description": "Small interactive app for browsing animated emoji and expressions, built with React, Tailwind CSS, and Framer Motion.",
-      "path": "https://github.com/adhamito/usmileys",
-      "img": "/assets/usmileys.jpg",
-      "url": "https://usmileys.netlify.app"
+      "name": "American Award Summit — Nomination Portal",
+      "technologies": ["React", "TensorFlow.js", "Appwrite", "Express", "Cloudinary"],
+      "description": "Freelance: AI-assisted nomination/submission portal for the American Award Summit, with automated headshot background removal and email notifications."
     }
   ],
 
@@ -158,6 +160,11 @@
       "name": "Rust",
       "level": "Beginner",
       "description": "Wrote a small driver to interface with legacy dot-matrix printers for warehouse label and invoice printing."
+    },
+    {
+      "name": "Java",
+      "level": "Beginner",
+      "description": "Built a Spring Boot backend (Spring Security, JWT, JPA) integrating with Microsoft Graph during my NTT Data internship."
     }
   ],
 
@@ -190,10 +197,10 @@
   ],
   "experiences": [
     {
-      "title": "Full Stack Developer",
+      "title": "IT Manager",
       "company": "Dawa Maghreb",
-      "location": "Tangier, Morocco",
-      "durationStart": "01/09/2025",
+      "location": "Tamesna, Morocco",
+      "durationStart": "01/11/2025",
       "durationEnd": "Present",
       "description": [
         "Sole developer of a suite of internal operations tools for pharmaceutical wholesale distribution — client scoring, real-time sales monitoring, employee and delivery-driver tracking, pharmacy-network tracking with map-based visualization, and production-floor TV dashboards — built with Next.js, React, TypeScript, PostgreSQL (Prisma/Neon), and MySQL.",
@@ -205,12 +212,13 @@
     },
     {
       "title": "Full Stack Developer Intern",
-      "company": "NTT Data",
-      "location": "Tétouan, Morocco",
+      "company": "NTT DATA Middle East and Africa",
+      "location": "Tanger-Tétouan-Al Hoceïma, Morocco (Remote)",
       "durationStart": "01/03/2025",
-      "durationEnd": "30/06/2025",
+      "durationEnd": "31/07/2025",
       "description": [
-        "Built enterprise-level web application features with Laravel, React, TypeScript, and Tailwind CSS, with a focus on performance, security, and scalability.",
+        "Built NTT Data Front, an enterprise data-automation frontend with dynamic forms, dashboards, client data visualization, and Excel import/export, using React, Next.js, TypeScript, and Tailwind CSS.",
+        "Built a Spring Boot backend (Java, Spring Security, JWT, JPA) integrating with Microsoft Graph for authentication and data access.",
         "Gathered technical specifications and contributed to database architecture as part of a cross-functional, agile team.",
         "Implemented clean, maintainable user interfaces aligned with business and UX requirements."
       ]
@@ -222,7 +230,8 @@
       "durationStart": "15/09/2024",
       "durationEnd": "15/02/2025",
       "description": [
-        "Owned full-stack delivery across e-commerce, library-management, and portfolio projects — from requirements and UI/UX to coding, testing, and deployment.",
+        "Built a full-stack booking/rental landing page and a client website for Sophex, plus SMARTER, a full-stack app pairing a Next.js frontend with a NestJS/TypeORM/MySQL backend and JWT authentication.",
+        "Built USmileys, a React and Framer Motion app for browsing animated emoji and expressions.",
         "Built responsive, performance-optimized applications with Laravel, React, and Tailwind CSS.",
         "Deepened understanding of software architecture through end-to-end ownership of the development lifecycle."
       ]
@@ -234,7 +243,7 @@
       "durationStart": "01/04/2024",
       "durationEnd": "04/06/2024",
       "description": [
-        "Contributed to full-stack development of e-commerce, digital library, and portfolio applications during a final-year project (PFE) internship.",
+        "Built the company's web application (Next.js, Radix UI, Framer Motion, Zustand, shadcn/ui) during a final-year project (PFE) internship.",
         "Worked with stakeholders to translate functional requirements into scalable, maintainable web applications.",
         "Strengthened both front-end and back-end skills using modern tools and frameworks."
       ]
