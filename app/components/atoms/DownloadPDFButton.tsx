@@ -115,6 +115,18 @@ export const DownloadPDFButton = () => {
       return { lines, height: lines.length * size * 1.35 };
     };
 
+    // A lighter sub-heading used to group entries within a section (e.g.
+    // splitting Projects into personal vs. professional/freelance work).
+    const subheading = (title: string) => {
+      ensureSpace(26);
+      main.y += 12;
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(9.5);
+      doc.setTextColor(...GOLD_LIGHT);
+      doc.text(title.toUpperCase(), main.x, main.y);
+      main.y += 12;
+    };
+
     const drawProjectEntry = (project: {
       name: string;
       technologies: string[];
@@ -218,30 +230,46 @@ export const DownloadPDFButton = () => {
     if (c.github) contactItem("GitHub", "View Profile", c.github);
 
     sidebarTitle("Skills");
-    doc.setFont("helvetica", "normal");
     const dotRadius = 2.6;
     const dotGap = 3;
     const dotsAreaWidth = 4 * (dotRadius * 2) + 3 * dotGap;
-    data.skills.forEach((skill) => {
-      doc.setFontSize(8.8);
-      doc.setTextColor(...WHITE);
-      doc.text(skill.name, sb.x, sb.y);
-      const filled = LEVEL_DOTS[skill.level] ?? 2;
-      let dotX = sb.x + sb.width - dotsAreaWidth + dotRadius;
-      for (let i = 0; i < 4; i++) {
-        if (i < filled) {
-          doc.setFillColor(...GOLD_DARK);
-          doc.circle(dotX, sb.y - 2.5, dotRadius, "F");
-        } else {
-          doc.setDrawColor(...MUTED_LIGHT);
-          doc.setLineWidth(0.6);
-          doc.circle(dotX, sb.y - 2.5, dotRadius, "S");
+    const CATEGORY_ORDER = ["Frontend", "Backend", "Databases & Systems"];
+    const skillsByCategory = CATEGORY_ORDER.map((cat) => ({
+      cat,
+      skills: data.skills.filter(
+        (s) => ((s as { category?: string }).category ?? "Other") === cat
+      ),
+    })).filter((group) => group.skills.length > 0);
+
+    skillsByCategory.forEach(({ cat, skills }) => {
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(7.5);
+      doc.setTextColor(...MUTED_LIGHT);
+      doc.text(cat.toUpperCase(), sb.x, sb.y);
+      sb.y += 11;
+      skills.forEach((skill) => {
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(8.8);
+        doc.setTextColor(...WHITE);
+        doc.text(skill.name, sb.x, sb.y);
+        const filled = LEVEL_DOTS[skill.level] ?? 2;
+        let dotX = sb.x + sb.width - dotsAreaWidth + dotRadius;
+        for (let i = 0; i < 4; i++) {
+          if (i < filled) {
+            doc.setFillColor(...GOLD_DARK);
+            doc.circle(dotX, sb.y - 2.5, dotRadius, "F");
+          } else {
+            doc.setDrawColor(...MUTED_LIGHT);
+            doc.setLineWidth(0.6);
+            doc.circle(dotX, sb.y - 2.5, dotRadius, "S");
+          }
+          dotX += dotRadius * 2 + dotGap;
         }
-        dotX += dotRadius * 2 + dotGap;
-      }
-      sb.y += 14;
+        sb.y += 14;
+      });
+      sb.y += 6;
     });
-    sb.y += 8;
+    sb.y += 2;
 
     sidebarTitle("Education");
     [...data.educations].reverse().forEach((edu) => {
@@ -352,19 +380,9 @@ export const DownloadPDFButton = () => {
     });
 
     sectionTitle("Projects");
-    // Keep the PDF focused on the strongest, most relevant work rather than
-    // every project ever built — the live site's Projects page still shows
-    // everything for anyone who wants to browse further.
-    const featuredNames = [
-      "SaudiVoyage",
-      "American Award Summit",
-      "Cv-Template",
-      "Estima-Dashboard",
-    ];
-    [...data.projects]
-      .reverse()
-      .filter((p) => featuredNames.includes(p.name))
-      .forEach(drawProjectEntry);
+    subheading("Personal Projects");
+    [...data.projects].reverse().forEach(drawProjectEntry);
+    subheading("Professional / Freelance Projects");
     data.additionalProjects.forEach(drawProjectEntry);
 
     // ---------- Footer: page numbers on every page ----------

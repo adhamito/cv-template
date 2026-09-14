@@ -99,82 +99,110 @@
     {
       "name": "HTML",
       "level": "Expert",
+      "category": "Frontend",
       "description": "Strong command of semantic, accessible HTML for structuring everything from simple landing pages to complex, component-driven applications."
     },
     {
       "name": "CSS",
       "level": "Expert",
+      "category": "Frontend",
       "description": "Build responsive, accessible interfaces from scratch, and productive with utility-first frameworks like Tailwind CSS."
     },
     {
       "name": "JavaScript",
       "level": "Expert",
+      "category": "Frontend",
       "description": "Solid foundation in modern JavaScript (ES6+), used daily for interactive UIs on the frontend and Node.js services on the backend."
     },
     {
       "name": "React",
       "level": "Expert",
+      "category": "Frontend",
       "description": "Build reusable components and single-page applications, managing complex state with Redux and integrating REST APIs."
-    },
-    {
-      "name": "Node.js",
-      "level": "Expert",
-      "description": "Build REST APIs and backend services with Express, integrating with MongoDB and MySQL and handling asynchronous workflows."
-    },
-    {
-      "name": "Python",
-      "level": "Expert",
-      "description": "Used for automation scripts and backend services, including a FastAPI service powering an internal reporting platform (ClickUp sync, PDF generation, WhatsApp delivery)."
-    },
-    {
-      "name": "PostgreSQL",
-      "level": "Expert",
-      "description": "Primary database across several internal tools, working with Prisma and hosted Postgres (Neon) for real-time dashboards and tracking systems."
-    },
-    {
-      "name": "Laravel",
-      "level": "Expert",
-      "description": "Primary backend framework across two internships — built secure REST APIs, authentication flows, and database-driven features for e-commerce and library-management systems."
-    },
-    {
-      "name": "Git",
-      "level": "Expert",
-      "description": "Comfortable with day-to-day branching, merging, and conflict resolution in collaborative, multi-developer repositories."
     },
     {
       "name": "Tailwind CSS",
       "level": "Expert",
+      "category": "Frontend",
       "description": "Go-to styling approach for fast, consistent, mobile-first UI across nearly every recent project."
     },
     {
       "name": "Redux",
       "level": "Intermediate",
+      "category": "Frontend",
       "description": "Used to manage state in larger React applications, keeping data flow predictable across nested components."
     },
     {
       "name": "Next.js",
       "level": "Expert",
+      "category": "Frontend",
       "description": "Built several SSR and statically generated apps with dynamic routing and SEO-friendly rendering."
+    },
+    {
+      "name": "Node.js",
+      "level": "Expert",
+      "category": "Backend",
+      "description": "Build REST APIs and backend services with Express, integrating with MongoDB and MySQL and handling asynchronous workflows."
+    },
+    {
+      "name": "Laravel",
+      "level": "Expert",
+      "category": "Backend",
+      "description": "Primary backend framework across two internships — built secure REST APIs, authentication flows, and database-driven features for e-commerce and library-management systems."
     },
     {
       "name": "Nest.js",
       "level": "Advanced",
+      "category": "Backend",
       "description": "Building REST APIs and modular backend services with TypeScript, dependency injection, and decorators."
     },
     {
-      "name": "Rust",
-      "level": "Beginner",
-      "description": "Wrote a small driver to interface with legacy dot-matrix printers for warehouse label and invoice printing."
+      "name": "Python",
+      "level": "Expert",
+      "category": "Backend",
+      "description": "Used for automation scripts and backend services, including a FastAPI service powering an internal reporting platform (ClickUp sync, PDF generation, WhatsApp delivery)."
     },
     {
       "name": "Java",
       "level": "Beginner",
+      "category": "Backend",
       "description": "Built a Spring Boot backend (Spring Security, JWT, JPA) integrating with Microsoft Graph during my NTT Data internship."
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Expert",
+      "category": "Databases & Systems",
+      "description": "Primary database across several internal tools, working with Prisma and hosted Postgres (Neon) for real-time dashboards and tracking systems."
+    },
+    {
+      "name": "Git",
+      "level": "Expert",
+      "category": "Databases & Systems",
+      "description": "Comfortable with day-to-day branching, merging, and conflict resolution in collaborative, multi-developer repositories."
     },
     {
       "name": "Docker",
       "level": "Intermediate",
+      "category": "Databases & Systems",
       "description": "Containerized full-stack Next.js/NestJS applications for consistent local development and deployment."
+    },
+    {
+      "name": "Cloud Deployment",
+      "level": "Intermediate",
+      "category": "Databases & Systems",
+      "description": "Deploy full-stack apps to Vercel and Netlify, including serverless functions and environment configuration."
+    },
+    {
+      "name": "Testing",
+      "level": "Intermediate",
+      "category": "Databases & Systems",
+      "description": "Write end-to-end tests with Playwright and component/unit tests with Jest and Testing Library."
+    },
+    {
+      "name": "Rust",
+      "level": "Beginner",
+      "category": "Databases & Systems",
+      "description": "Wrote a small driver to interface with legacy dot-matrix printers for warehouse label and invoice printing."
     }
   ],
 
@@ -213,11 +241,11 @@
       "durationStart": "01/11/2025",
       "durationEnd": "Present",
       "description": [
-        "Sole developer of a suite of internal operations tools for pharmaceutical wholesale distribution — client scoring, real-time sales monitoring, employee and delivery-driver tracking, pharmacy-network tracking with map-based visualization, and production-floor TV dashboards — built with Next.js, React, TypeScript, PostgreSQL (Prisma/Neon), and MySQL.",
-        "Lead developer of Tirage Contrôle, a React/TypeScript warehouse order-fulfillment tracker covering preparation, quality control, packing, and shipping stages, with an optional FastAPI backend.",
-        "Built a ClickUp reporting platform (FastAPI + React) that syncs project data from ClickUp and automatically delivers PDF reports via WhatsApp.",
-        "Wrote a Rust driver to interface with legacy dot-matrix printers for warehouse label and invoice printing, and support broader IT operations: networking, workstation setup, and printer/peripheral connectivity.",
-        "Build and maintain the company's product landing page (la-dawa) with React, TypeScript, Vite, Tailwind CSS, and Radix UI, translating Figma designs into production-ready components."
+        "Architected and built, as sole developer, a suite of internal operations tools for pharmaceutical wholesale distribution — client scoring, real-time sales monitoring, employee and delivery-driver tracking, pharmacy-network tracking with map-based visualization, and production-floor TV dashboards — built with Next.js, React, TypeScript, PostgreSQL (Prisma/Neon), and MySQL.",
+        "Spearheaded Tirage Contrôle, a React/TypeScript warehouse order-fulfillment tracker covering preparation, quality control, packing, and shipping stages, with an optional FastAPI backend.",
+        "Engineered a ClickUp reporting platform (FastAPI + React) that syncs project data from ClickUp and automatically delivers PDF reports via WhatsApp.",
+        "Developed a Rust driver to interface with legacy dot-matrix printers for warehouse label and invoice printing, and manage broader IT operations: networking, workstation setup, and printer/peripheral connectivity.",
+        "Own and maintain the company's product landing page (la-dawa) with React, TypeScript, Vite, Tailwind CSS, and Radix UI, translating Figma designs into production-ready components."
       ]
     },
     {
@@ -227,9 +255,9 @@
       "durationStart": "01/03/2025",
       "durationEnd": "31/07/2025",
       "description": [
-        "Built NTT Data Front, an enterprise data-automation frontend with dynamic forms, dashboards, client data visualization, and Excel import/export, using React, Next.js, TypeScript, and Tailwind CSS.",
-        "Built a Spring Boot backend (Java, Spring Security, JWT, JPA) integrating with Microsoft Graph for authentication and data access.",
-        "Gathered technical specifications and contributed to database architecture as part of a cross-functional, agile team.",
+        "Engineered NTT Data Front, an enterprise data-automation frontend with dynamic forms, dashboards, client data visualization, and Excel import/export, using React, Next.js, TypeScript, and Tailwind CSS.",
+        "Developed a Spring Boot backend (Java, Spring Security, JWT, JPA) integrating with Microsoft Graph for authentication and data access.",
+        "Partnered with a cross-functional, agile team to gather technical specifications and shape database architecture.",
         "Implemented clean, maintainable user interfaces aligned with business and UX requirements."
       ]
     },
@@ -240,10 +268,10 @@
       "durationStart": "15/09/2024",
       "durationEnd": "15/02/2025",
       "description": [
-        "Built a full-stack booking/rental landing page and a client website for Sophex, plus SMARTER, a full-stack app pairing a Next.js frontend with a NestJS/TypeORM/MySQL backend and JWT authentication.",
-        "Built USmileys, a React and Framer Motion app for browsing animated emoji and expressions.",
-        "Built responsive, performance-optimized applications with Laravel, React, and Tailwind CSS.",
-        "Deepened understanding of software architecture through end-to-end ownership of the development lifecycle."
+        "Engineered a full-stack booking/rental landing page and a client website for Sophex, plus SMARTER, a full-stack app pairing a Next.js frontend with a NestJS/TypeORM/MySQL backend and JWT authentication.",
+        "Developed USmileys, a React and Framer Motion app for browsing animated emoji and expressions.",
+        "Delivered responsive, performance-optimized applications with Laravel, React, and Tailwind CSS.",
+        "Strengthened software-architecture expertise through end-to-end ownership of the development lifecycle."
       ]
     },
     {
@@ -253,8 +281,8 @@
       "durationStart": "01/04/2024",
       "durationEnd": "04/06/2024",
       "description": [
-        "Built the company's web application (Next.js, Radix UI, Framer Motion, Zustand, shadcn/ui) during a final-year project (PFE) internship.",
-        "Worked with stakeholders to translate functional requirements into scalable, maintainable web applications.",
+        "Engineered the company's web application (Next.js, Radix UI, Framer Motion, Zustand, shadcn/ui) during a final-year project (PFE) internship.",
+        "Partnered with stakeholders to translate functional requirements into scalable, maintainable web applications.",
         "Strengthened both front-end and back-end skills using modern tools and frameworks."
       ]
     }
