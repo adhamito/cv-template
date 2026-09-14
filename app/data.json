@@ -13,7 +13,12 @@
       "linkedin": "https://www.linkedin.com/in/adham-almechkor-ab238b1b7/",
       "github": "https://github.com/adhamito"
     },
-    "about": "Full Stack Developer based in Tangier, Morocco, with hands-on experience shipping production web applications end-to-end — from responsive React/Next.js interfaces to Laravel and Node.js APIs. Comfortable owning a feature from requirements through UI, backend logic, and deployment. Currently building internal operations tooling (dashboards, tracking systems, and reporting automation) for pharmaceutical wholesale distributor Dawa Maghreb, alongside IT systems support — including a custom Rust driver for legacy printers — while continuing to deepen my skills in NestJS and cloud-native tooling."
+    "about": "Full Stack Developer based in Tangier, Morocco, with hands-on experience shipping production web applications end-to-end — from responsive React/Next.js interfaces to Laravel and Node.js APIs. Comfortable owning a feature from requirements through UI, backend logic, and deployment. Currently building internal operations tooling (dashboards, tracking systems, and reporting automation) for pharmaceutical wholesale distributor Dawa Maghreb, alongside IT systems support — including a custom Rust driver for legacy printers — while continuing to deepen my skills in NestJS and cloud-native tooling.",
+    "highlights": [
+      "Sole developer of 10+ internal tools for a pharmaceutical wholesale distributor, from warehouse fulfillment tracking to real-time sales and pharmacy-network dashboards.",
+      "Full-stack range across React/Next.js, Laravel, NestJS, Spring Boot (Java), and a custom Rust driver for legacy hardware.",
+      "Delivered freelance work spanning AI-assisted image processing, real-time TV data displays, and a full school-management system."
+    ]
   },
   "projects": [
     {
@@ -165,6 +170,11 @@
       "name": "Java",
       "level": "Beginner",
       "description": "Built a Spring Boot backend (Spring Security, JWT, JPA) integrating with Microsoft Graph during my NTT Data internship."
+    },
+    {
+      "name": "Docker",
+      "level": "Intermediate",
+      "description": "Containerized full-stack Next.js/NestJS applications for consistent local development and deployment."
     }
   ],
 

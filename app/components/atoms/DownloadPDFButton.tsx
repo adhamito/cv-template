@@ -289,6 +289,14 @@ export const DownloadPDFButton = () => {
     sectionTitle("Summary");
     paragraph(data.personalInfo.about);
 
+    const highlights = (data.personalInfo as { highlights?: string[] }).highlights;
+    if (highlights?.length) {
+      sectionTitle("Key Highlights");
+      const { rendered, height } = measureBullets(highlights);
+      ensureSpace(height);
+      drawBullets(rendered);
+    }
+
     sectionTitle("Work Experience");
     data.experiences.forEach((exp, idx) => {
       doc.setFont("helvetica", "bold");
@@ -344,7 +352,19 @@ export const DownloadPDFButton = () => {
     });
 
     sectionTitle("Projects");
-    [...data.projects].reverse().forEach(drawProjectEntry);
+    // Keep the PDF focused on the strongest, most relevant work rather than
+    // every project ever built — the live site's Projects page still shows
+    // everything for anyone who wants to browse further.
+    const featuredNames = [
+      "SaudiVoyage",
+      "American Award Summit",
+      "Cv-Template",
+      "Estima-Dashboard",
+    ];
+    [...data.projects]
+      .reverse()
+      .filter((p) => featuredNames.includes(p.name))
+      .forEach(drawProjectEntry);
     data.additionalProjects.forEach(drawProjectEntry);
 
     // ---------- Footer: page numbers on every page ----------

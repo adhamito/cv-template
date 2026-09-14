@@ -18,6 +18,7 @@ import {
   SiElementor,
   SiPostgresql,
   SiRust,
+  SiDocker,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -112,6 +113,8 @@ export const TechnologyIcon: FC<TechnologyProps> = ({
       );
     case "rust":
       return <SiRust size={size} className={cn("text-orange-700", className)} />;
+    case "docker":
+      return <SiDocker size={size} className={cn("text-blue-500", className)} />;
     default:
       return null;
   }
