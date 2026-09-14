@@ -16,6 +16,8 @@ import {
   SiRadixui,
   SiPhp,
   SiElementor,
+  SiPostgresql,
+  SiRust,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -104,6 +106,12 @@ export const TechnologyIcon: FC<TechnologyProps> = ({
       return (
         <SiElementor size={size} className={cn("text-pink-500", className)} />
       );
+    case "postgresql":
+      return (
+        <SiPostgresql size={size} className={cn("text-blue-400", className)} />
+      );
+    case "rust":
+      return <SiRust size={size} className={cn("text-orange-700", className)} />;
     default:
       return null;
   }

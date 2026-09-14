@@ -13,7 +13,7 @@
       "linkedin": "https://www.linkedin.com/in/adham-almechkor-ab238b1b7/",
       "github": "https://github.com/adhamito"
     },
-    "about": "Full Stack Developer based in Tangier, Morocco, with hands-on experience shipping production web applications end-to-end — from responsive React/Next.js interfaces to Laravel and Node.js APIs. Comfortable owning a feature from requirements through UI, backend logic, and deployment. Currently combining full-stack development with IT systems support (networking, workstation and printer setup) at Dawa Maghreb, while continuing to deepen my skills in NestJS and cloud-native tooling."
+    "about": "Full Stack Developer based in Tangier, Morocco, with hands-on experience shipping production web applications end-to-end — from responsive React/Next.js interfaces to Laravel and Node.js APIs. Comfortable owning a feature from requirements through UI, backend logic, and deployment. Currently building internal operations tooling (dashboards, tracking systems, and reporting automation) for pharmaceutical wholesale distributor Dawa Maghreb, alongside IT systems support — including a custom Rust driver for legacy printers — while continuing to deepen my skills in NestJS and cloud-native tooling."
   },
   "projects": [
     {
@@ -85,60 +85,58 @@
       "path": "https://github.com/adhamito/usmileys",
       "img": "/assets/usmileys.jpg",
       "url": "https://usmileys.netlify.app"
-    },
-    {
-      "name": "Dawa Maghreb — Company Landing Page",
-      "technologies": ["React", "TypeScript", "Vite", "Tailwind CSS", "Radix UI"],
-      "description": "Company landing page for Dawa Maghreb: translated a Figma design into a production React/TypeScript build using Vite and Radix UI components.",
-      "path": "https://github.com/adhamito/la-dawa",
-      "img": "/assets/la-dawa.jpg"
     }
   ],
 
   "skills": [
     {
       "name": "HTML",
-      "level": "Advanced",
+      "level": "Expert",
       "description": "Strong command of semantic, accessible HTML for structuring everything from simple landing pages to complex, component-driven applications."
     },
     {
       "name": "CSS",
-      "level": "Advanced",
+      "level": "Expert",
       "description": "Build responsive, accessible interfaces from scratch, and productive with utility-first frameworks like Tailwind CSS."
     },
     {
       "name": "JavaScript",
-      "level": "Advanced",
+      "level": "Expert",
       "description": "Solid foundation in modern JavaScript (ES6+), used daily for interactive UIs on the frontend and Node.js services on the backend."
     },
     {
       "name": "React",
-      "level": "Advanced",
+      "level": "Expert",
       "description": "Build reusable components and single-page applications, managing complex state with Redux and integrating REST APIs."
     },
     {
       "name": "Node.js",
-      "level": "Intermediate",
+      "level": "Expert",
       "description": "Build REST APIs and backend services with Express, integrating with MongoDB and MySQL and handling asynchronous workflows."
     },
     {
       "name": "Python",
-      "level": "Intermediate",
-      "description": "Used for automation scripts and backend prototypes, including small Django and Flask applications."
+      "level": "Expert",
+      "description": "Used for automation scripts and backend services, including a FastAPI service powering an internal reporting platform (ClickUp sync, PDF generation, WhatsApp delivery)."
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Expert",
+      "description": "Primary database across several internal tools, working with Prisma and hosted Postgres (Neon) for real-time dashboards and tracking systems."
     },
     {
       "name": "Laravel",
-      "level": "Advanced",
+      "level": "Expert",
       "description": "Primary backend framework across two internships — built secure REST APIs, authentication flows, and database-driven features for e-commerce and library-management systems."
     },
     {
       "name": "Git",
-      "level": "Advanced",
+      "level": "Expert",
       "description": "Comfortable with day-to-day branching, merging, and conflict resolution in collaborative, multi-developer repositories."
     },
     {
       "name": "Tailwind CSS",
-      "level": "Advanced",
+      "level": "Expert",
       "description": "Go-to styling approach for fast, consistent, mobile-first UI across nearly every recent project."
     },
     {
@@ -148,13 +146,18 @@
     },
     {
       "name": "Next.js",
-      "level": "Advanced",
+      "level": "Expert",
       "description": "Built several SSR and statically generated apps with dynamic routing and SEO-friendly rendering."
     },
     {
       "name": "Nest.js",
-      "level": "Intermediate",
+      "level": "Advanced",
       "description": "Building REST APIs and modular backend services with TypeScript, dependency injection, and decorators."
+    },
+    {
+      "name": "Rust",
+      "level": "Beginner",
+      "description": "Wrote a small driver to interface with legacy dot-matrix printers for warehouse label and invoice printing."
     }
   ],
 
@@ -193,9 +196,11 @@
       "durationStart": "01/09/2025",
       "durationEnd": "Present",
       "description": [
-        "Build and maintain the company's product landing page (la-dawa) with React, TypeScript, Vite, Tailwind CSS, and Radix UI, translating Figma designs into production-ready components.",
-        "Develop and maintain internal full-stack features end-to-end, from UI to backend integration.",
-        "Support IT operations alongside development: setting up workstations, configuring network connectivity, and connecting printers and peripherals for the team."
+        "Sole developer of a suite of internal operations tools for pharmaceutical wholesale distribution — client scoring, real-time sales monitoring, employee and delivery-driver tracking, pharmacy-network tracking with map-based visualization, and production-floor TV dashboards — built with Next.js, React, TypeScript, PostgreSQL (Prisma/Neon), and MySQL.",
+        "Lead developer of Tirage Contrôle, a React/TypeScript warehouse order-fulfillment tracker covering preparation, quality control, packing, and shipping stages, with an optional FastAPI backend.",
+        "Built a ClickUp reporting platform (FastAPI + React) that syncs project data from ClickUp and automatically delivers PDF reports via WhatsApp.",
+        "Wrote a Rust driver to interface with legacy dot-matrix printers for warehouse label and invoice printing, and support broader IT operations: networking, workstation setup, and printer/peripheral connectivity.",
+        "Build and maintain the company's product landing page (la-dawa) with React, TypeScript, Vite, Tailwind CSS, and Radix UI, translating Figma designs into production-ready components."
       ]
     },
     {
