@@ -12,6 +12,14 @@ type SkillModalProps = {
   skill: SkillModel;
   projects: ProjectModel[];
 };
+
+const LEVEL_WIDTH: Record<string, string> = {
+  Beginner: "25%",
+  Intermediate: "50%",
+  Advanced: "75%",
+  Expert: "100%",
+};
+
 export const SkillModal: FC<SkillModalProps> = ({ skill, projects }) => {
   const { setOpen } = useModal();
   if (!skill) return <></>;
@@ -53,9 +61,17 @@ export const SkillModal: FC<SkillModalProps> = ({ skill, projects }) => {
           <h4 className="text-lg font-bold mb-2 items-center text-center">
             {skill.name}
           </h4>
-          <p className="items-center text-center m-3">
-            <strong>Experience:</strong> {skill.experience}
-          </p>
+          <div className="items-center text-center m-3">
+            <p className="mb-1">
+              <strong>Level:</strong> {skill.level}
+            </p>
+            <div className="w-40 h-2 mx-auto bg-gray-700 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-[#E6AD00]"
+                style={{ width: LEVEL_WIDTH[skill.level] ?? "50%" }}
+              />
+            </div>
+          </div>
           <h3 className="items-center text-center m-3 border-2-b border-gray-300">
             <strong>Description</strong>
           </h3>

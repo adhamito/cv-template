@@ -2,79 +2,78 @@
   "personalInfo": {
     "name": "ADHAM AL MECHKOR",
     "title": {
-      "front": "Front end Developer",
-      "back": "Back end Developer",
+      "front": "Front End Developer",
+      "back": "Back End Developer",
       "full": "Full Stack Developer"
     },
     "contactDetails": {
       "phone": "+212 714268801",
       "email": "aalmechkor2@gmail.com",
-      "location": "Tangier, Morocco"
+      "location": "Tangier, Morocco",
+      "linkedin": "https://www.linkedin.com/in/adham-almechkor-ab238b1b7/",
+      "github": "https://github.com/adhamito"
     },
-    "about": "   passionate Full Stack Developer currently pursuing a degree in Digital Development. At 24   years old, I am driven by a desire to innovate and create solutions that enhance the digital landscape. My journey in digital development has equipped me with a solid foundation in programming languages such as HTML, CSS, JavaScript, Python, and React."
-  },
-  "githubStats": {
-    "skills": ["HTML", "CSS", "JavaScript", "TypeScript"]
+    "about": "Full Stack Developer based in Tangier, Morocco, with hands-on experience shipping production web applications end-to-end — from responsive React/Next.js interfaces to Laravel and Node.js APIs. Comfortable owning a feature from requirements through UI, backend logic, and deployment. Currently combining full-stack development with IT systems support (networking, workstation and printer setup) at Dawa Maghreb, while continuing to deepen my skills in NestJS and cloud-native tooling."
   },
   "projects": [
     {
       "name": "E-commerce Website",
-      "technologies": ["Laravel", "React", "Redux", "Tailwind"],
-      "description": "I worked with three-person teams to create an e-commerce website from scratch for a class project.",
+      "technologies": ["Laravel", "React", "Redux", "Tailwind CSS"],
+      "description": "Built with a three-person team as a class project: product catalog, cart, and checkout flow backed by a Laravel REST API and a Redux-driven React frontend.",
       "path": "https://github.com/adhamito/ad",
       "img": "/assets/1.jpg"
     },
     {
       "name": "Library Management System",
       "technologies": ["Laravel", "React"],
-      "description": "Our project aimed to develop a comprehensive library management system that streamlined cataloging, lending, and tracking of resources to enhance accessibility and efficiency for both librarians and patrons.",
+      "description": "Cataloging, lending, and tracking system for library resources, built to streamline day-to-day operations for librarians and patrons.",
       "path": "https://github.com/adhamito/bilb_laravel-",
       "img": "/assets/2.jpg"
     },
     {
       "name": "Portfolio Website",
-      "technologies": ["HTML", "CSS", "React", "Tailwind"],
-      "description": "Developing a comprehensive website portfolio to showcase my projects, services, and capabilities.",
+      "technologies": ["HTML", "CSS", "React", "Tailwind CSS"],
+      "description": "Personal portfolio site showcasing projects, services, and capabilities, built with React and Tailwind CSS.",
       "path": "https://github.com/adhamito/my-portfolio",
       "img": "/assets/3.jpg",
       "url": "https://relaxed-fenglisu-f96b87.netlify.app"
     },
     {
       "name": "Estima-Dashboard",
-      "technologies": ["Next.js", "Tailwind", "ShadcnUI", "Typescript"],
-      "description": "Estima-Dashboard is a responsive web application built with Next.js and styled using Tailwind CSS. It provides real-time insights and data visualization, allowing users to easily monitor essential metrics. With its sleek design and intuitive interface, Estima-Dashboard enhances productivity for personal and professional use.",
+      "technologies": ["Next.js", "Tailwind CSS", "ShadcnUI", "TypeScript"],
+      "description": "Responsive analytics dashboard with real-time data visualization for monitoring key metrics, built with Next.js, TypeScript, and shadcn/ui.",
       "path": "https://github.com/adhamito/Estima-Dashboard-",
       "img": "/assets/4.jpg",
       "url": "https://estima-dashboard.netlify.app"
     },
     {
       "name": "Cv-Template",
-      "technologies": ["Next.js", "Tailwind", "JavaScript"],
-      "description": "Cv-Template is a sleek and modern resume builder designed to help job seekers create professional CVs effortlessly. Utilizing Next.js for dynamic rendering and Tailwind CSS for customizable, responsive designs, this project allows users to craft visually appealing resumes that stand out. It's perfect for anyone looking to build a standout CV quickly and efficiently.",
+      "technologies": ["Next.js", "Tailwind CSS", "JavaScript"],
+      "description": "This CV/portfolio site itself — a dynamic, data-driven resume builder with PDF export, built with Next.js and Tailwind CSS.",
       "path": "https://github.com/adhamito/cv-template",
       "img": "/assets/5.jpg",
       "url": "https://cv-templateadhamalmechkor.netlify.app"
     },
     {
-      "name": "americanawardsummit",
+      "name": "American Award Summit",
       "technologies": ["Next.js", "Tailwind CSS", "JavaScript"],
-      "description": "American Award Summit is a dynamic and elegant website built to showcase an international event celebrating excellence across various fields. Developed with Next.js for fast performance and smooth navigation, and styled with Tailwind CSS for a responsive and modern interface, this project captures the prestige and professionalism of the summit. It features animated sections, well-structured content blocks, and a clean layout that highlights event details, speakers, and registration information. The platform is optimized for both desktop and mobile, making it an ideal promotional site for high-profile conferences or award ceremonies.",
+      "description": "Marketing site for an international awards event, with animated sections, speaker profiles, and registration details, optimized for desktop and mobile.",
       "path": "https://americanawardsummit.com",
       "img": "/assets/6.jpg",
       "url": "https://americanawardsummit.com"
     },
     {
-      "name": "saudivoyage",
+      "name": "SaudiVoyage",
       "technologies": ["WordPress", "PHP", "Elementor", "CSS"],
-      "description": "SaudiVoyage is a visually captivating and informative travel website dedicated to showcasing cultural and spiritual journeys to Saudi Arabia. Built with WordPress and styled using Elementor and custom CSS, the site offers a smooth and elegant user experience across devices. It features engaging blog content, beautiful photo galleries, and detailed guides about Omra and Hajj, making it a valuable resource for pilgrims and cultural travelers. The responsive design and SEO-friendly structure ensure excellent performance and visibility for a global audience.",
+      "description": "Travel and pilgrimage content site built on WordPress with Elementor and custom CSS, including blog content and photo galleries for Omra and Hajj guides.",
       "path": "https://saudivoyage.fr",
       "img": "/assets/saudivoyage.jpg",
       "url": "https://saudivoyage.fr"
     },
     {
-      "name": "nttdatafront",
+      "name": "NTT Data Front",
       "technologies": ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-      "description": "NTT Data Front is the frontend of a powerful desktop application designed to streamline and automate data generation tasks. Built using React with Next.js and styled with Tailwind CSS, the interface is modern, responsive, and optimized for user productivity. TypeScript ensures maintainability and type safety across the codebase. The application features dynamic forms, dashboard views, client data visualization, and Excel import/export capabilities, making it ideal for enterprise-level data management workflows.",
+      "description": "Frontend for an internal enterprise data-automation tool: dynamic forms, dashboard views, client data visualization, and Excel import/export.",
       "path": "https://github.com/adhamito/nttdatafront",
       "img": "/assets/nttdata.jpg",
       "url": "https://github.com/adhamito/nttdatafront"
@@ -82,79 +81,86 @@
     {
       "name": "USmileys",
       "technologies": ["React", "Tailwind CSS", "Framer Motion", "JavaScript"],
-      "description": "USmileys is a fun and interactive web application that lets users explore and enjoy a variety of animated emojis and expressions. Built with React and styled using Tailwind CSS, it offers a smooth and engaging UI experience enhanced with Framer Motion animations. Perfect for users looking to brighten their day with cheerful visuals.",
+      "description": "Small interactive app for browsing animated emoji and expressions, built with React, Tailwind CSS, and Framer Motion.",
       "path": "https://github.com/adhamito/usmileys",
       "img": "/assets/usmileys.jpg",
       "url": "https://usmileys.netlify.app"
+    },
+    {
+      "name": "Dawa Maghreb — Company Landing Page",
+      "technologies": ["React", "TypeScript", "Vite", "Tailwind CSS", "Radix UI"],
+      "description": "Company landing page for Dawa Maghreb: translated a Figma design into a production React/TypeScript build using Vite and Radix UI components.",
+      "path": "https://github.com/adhamito/la-dawa",
+      "img": "/assets/la-dawa.jpg"
     }
   ],
 
   "skills": [
     {
       "name": "HTML",
-      "experience": "7 years",
-      "description": "I have been using HTML for 6 years now. I have a deep understanding of semantic HTML and have used it in various projects, from simple websites to complex web applications."
+      "level": "Advanced",
+      "description": "Strong command of semantic, accessible HTML for structuring everything from simple landing pages to complex, component-driven applications."
     },
     {
       "name": "CSS",
-      "experience": "4 years",
-      "description": "With 3 years of CSS experience, I can create responsive, accessible, and visually appealing web pages. I have expertise in using CSS frameworks like Bootstrap and Tailwind, as well as custom styling."
+      "level": "Advanced",
+      "description": "Build responsive, accessible interfaces from scratch, and productive with utility-first frameworks like Tailwind CSS."
     },
     {
       "name": "JavaScript",
-      "experience": "4 years",
-      "description": "I have 3 years of experience with JavaScript, building dynamic, interactive web applications. I am skilled in both vanilla JavaScript and modern frameworks such as React and Node.js."
+      "level": "Advanced",
+      "description": "Solid foundation in modern JavaScript (ES6+), used daily for interactive UIs on the frontend and Node.js services on the backend."
     },
     {
       "name": "React",
-      "experience": "3 years",
-      "description": "I have been working with React for 2 years, building reusable components and single-page applications (SPAs). I have experience managing state with Redux and building scalable web apps."
+      "level": "Advanced",
+      "description": "Build reusable components and single-page applications, managing complex state with Redux and integrating REST APIs."
     },
     {
       "name": "Node.js",
-      "experience": "4 years",
-      "description": "I have 2 years of experience working with Node.js, creating server-side applications, APIs, and handling asynchronous operations. I am comfortable working with Express and integrating Node.js with databases like MongoDB and MySQL."
+      "level": "Intermediate",
+      "description": "Build REST APIs and backend services with Express, integrating with MongoDB and MySQL and handling asynchronous workflows."
     },
     {
       "name": "Python",
-      "experience": "5 years",
-      "description": "With 3 years of Python experience, I have worked on automation scripts, data analysis, and web development. I have also used Python frameworks like Django and Flask for backend development."
+      "level": "Intermediate",
+      "description": "Used for automation scripts and backend prototypes, including small Django and Flask applications."
     },
     {
       "name": "Laravel",
-      "experience": "2 year",
-      "description": "I have used Laravel for a year, primarily for backend development, building robust, secure web applications and RESTful APIs with efficient database handling."
+      "level": "Advanced",
+      "description": "Primary backend framework across two internships — built secure REST APIs, authentication flows, and database-driven features for e-commerce and library-management systems."
     },
     {
       "name": "Git",
-      "experience": "4 years",
-      "description": "I have been using Git for 3 years, collaborating with teams and managing version control for projects. I am familiar with branching, merging, and resolving conflicts in Git repositories."
+      "level": "Advanced",
+      "description": "Comfortable with day-to-day branching, merging, and conflict resolution in collaborative, multi-developer repositories."
     },
     {
-      "name": "Tailwind",
-      "experience": "4 year",
-      "description": "Over the past year, I have used Tailwind CSS to quickly design and develop responsive, mobile-first web pages with utility-first styling, making CSS development more efficient."
+      "name": "Tailwind CSS",
+      "level": "Advanced",
+      "description": "Go-to styling approach for fast, consistent, mobile-first UI across nearly every recent project."
     },
     {
       "name": "Redux",
-      "experience": "3 years",
-      "description": "I have worked with Redux for 1.5 years to manage complex state across large React applications, ensuring clean, maintainable, and scalable code for front-end development."
+      "level": "Intermediate",
+      "description": "Used to manage state in larger React applications, keeping data flow predictable across nested components."
     },
     {
       "name": "Next.js",
-      "experience": "3 year",
-      "description": "With 1 year of experience in next.js, I have built SEO-optimized, server-side rendered (SSR) applications, including static generation and dynamic routing for performant websites."
+      "level": "Advanced",
+      "description": "Built several SSR and statically generated apps with dynamic routing and SEO-friendly rendering."
     },
     {
       "name": "Nest.js",
-      "experience": "2 year",
-      "description": "I have been using Nest.js for 1 year now. I have experience building scalable, maintainable backend applications using TypeScript, leveraging its powerful features like dependency injection, decorators, and modular architecture to create robust REST APIs and microservices."
+      "level": "Intermediate",
+      "description": "Building REST APIs and modular backend services with TypeScript, dependency injection, and decorators."
     }
   ],
 
   "furtherEducation": {
     "courses": ["Complete mastery of Full Stack Web - Udemy"],
-    "currentlyLearning": ["Next js", "Nest js", "Cloud Native"]
+    "currentlyLearning": ["Nest.js", "Cloud Native"]
   },
   "educations": [
     {
@@ -171,24 +177,38 @@
     {
       "degree": "Economics",
       "institution": "AbdelMalik Essaadi University",
-
       "duration": "2021-2022"
     },
     {
       "degree": "Full Stack Development",
       "institution": "Ismontic",
-
       "duration": "2022-2024"
     }
   ],
   "experiences": [
     {
-      "title": "Software Development Intern",
-      "company": "The Bridger",
+      "title": "Full Stack Developer",
+      "company": "Dawa Maghreb",
       "location": "Tangier, Morocco",
-      "durationStart": "01/04/2024",
-      "durationEnd": "04/06/2024",
-      "description": "During my Final Year Project (PFE) internship at The Bridger, I contributed to the design and development of several full-stack applications, including e-commerce platforms, digital library systems, and personal portfolio websites. I collaborated closely with stakeholders to gather functional requirements, translate them into technical solutions, and deliver scalable and maintainable web applications. This experience allowed me to bridge academic knowledge with real-world application, sharpening my skills in both front-end and back-end development using modern tools and frameworks."
+      "durationStart": "01/09/2025",
+      "durationEnd": "Present",
+      "description": [
+        "Build and maintain the company's product landing page (la-dawa) with React, TypeScript, Vite, Tailwind CSS, and Radix UI, translating Figma designs into production-ready components.",
+        "Develop and maintain internal full-stack features end-to-end, from UI to backend integration.",
+        "Support IT operations alongside development: setting up workstations, configuring network connectivity, and connecting printers and peripherals for the team."
+      ]
+    },
+    {
+      "title": "Full Stack Developer Intern",
+      "company": "NTT Data",
+      "location": "Tétouan, Morocco",
+      "durationStart": "01/03/2025",
+      "durationEnd": "30/06/2025",
+      "description": [
+        "Built enterprise-level web application features with Laravel, React, TypeScript, and Tailwind CSS, with a focus on performance, security, and scalability.",
+        "Gathered technical specifications and contributed to database architecture as part of a cross-functional, agile team.",
+        "Implemented clean, maintainable user interfaces aligned with business and UX requirements."
+      ]
     },
     {
       "title": "Full Stack Developer Intern",
@@ -196,37 +216,32 @@
       "location": "Tangier, Morocco",
       "durationStart": "15/09/2024",
       "durationEnd": "15/02/2025",
-      "description": "At MediaCaris, I was entrusted with full-stack development responsibilities for a range of projects including e-commerce solutions, library management systems, and dynamic portfolio sites. My role spanned the entire development lifecycle—from requirement analysis and UI/UX design to coding, testing, and deployment. Leveraging technologies such as Laravel, React, and Tailwind CSS, I built responsive, performance-optimized applications. This role significantly deepened my understanding of software architecture and sharpened my ability to build robust, user-centric web experiences."
+      "description": [
+        "Owned full-stack delivery across e-commerce, library-management, and portfolio projects — from requirements and UI/UX to coding, testing, and deployment.",
+        "Built responsive, performance-optimized applications with Laravel, React, and Tailwind CSS.",
+        "Deepened understanding of software architecture through end-to-end ownership of the development lifecycle."
+      ]
     },
     {
-      "title": "Full Stack Developer Intern",
-      "company": "NTT Data",
-      "location": "Tétouan, Morocco",
-      "durationStart": "1/03/2025",
-      "durationEnd": "31/06/2025",
-      "description": "As a Full Stack Developer Intern at NTT Data, I am currently engaged in building enterprise-level web applications with a focus on performance, security, and scalability. My responsibilities include gathering technical specifications, architecting database structures, and implementing user interfaces with clean and maintainable code. Using Laravel, React, TypeScript, and Tailwind CSS, I contribute to cross-functional teams in delivering high-quality digital solutions that meet both user needs and business goals. This role continues to enhance my professional growth and technical depth within a collaborative agile environment."
+      "title": "Software Development Intern",
+      "company": "The Bridger",
+      "location": "Tangier, Morocco",
+      "durationStart": "01/04/2024",
+      "durationEnd": "04/06/2024",
+      "description": [
+        "Contributed to full-stack development of e-commerce, digital library, and portfolio applications during a final-year project (PFE) internship.",
+        "Worked with stakeholders to translate functional requirements into scalable, maintainable web applications.",
+        "Strengthened both front-end and back-end skills using modern tools and frameworks."
+      ]
     }
   ],
 
   "hobbies": [
-    {
-      "name": "football"
-    },
-    {
-      "name": "videogames"
-    },
-    {
-      "name": "photography"
-    },
-
-    {
-      "name": "reading"
-    },
-    {
-      "name": "hiking"
-    },
-    {
-      "name": "coding"
-    }
+    { "name": "football" },
+    { "name": "videogames" },
+    { "name": "photography" },
+    { "name": "reading" },
+    { "name": "hiking" },
+    { "name": "coding" }
   ]
 }

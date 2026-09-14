@@ -1,31 +1,38 @@
 import { FC } from "react";
 import { FurtherEducationModel } from "../models";
+import { SectionTitle } from "./atoms/SectionTitle";
 
 type FurtherEducationProps = {
   furtherEducation: FurtherEducationModel;
-}
+};
 
-export const FurtherEducation: FC<FurtherEducationProps> = ({ furtherEducation }) => {
+export const FurtherEducation: FC<FurtherEducationProps> = ({
+  furtherEducation,
+}) => {
   return (
-    <section className=" rounded-lg mb-4">
-      <h2 className="text-2xl font-bold mb-4 ">Further Education</h2>
+    <section className="p-2 text-white">
+      <SectionTitle title="Further Education" />
 
       {furtherEducation.courses.map((course) => (
-        <p key={course} className="text-lg">
-          {course} - <span className="font-semibold">Udemy</span>
+        <p key={course} className="mb-2">
+          {course}
         </p>
       ))}
 
-      <h3 className="text-lg font-bold mt-4">Currently Learning</h3>
-      <ul className="list-disc list-inside">
-        {furtherEducation.currentlyLearning.map((topic, index) => (
-          <li key={index} className="text-lg">
-            {topic}
-          </li>
-        ))}
-      </ul>
+      {furtherEducation.currentlyLearning.length > 0 && (
+        <>
+          <h3 className="font-semibold text-[#E6AD00] mt-2 mb-1">
+            Currently Learning
+          </h3>
+          <ul className="list-disc list-outside ml-5 space-y-1">
+            {furtherEducation.currentlyLearning.map((topic) => (
+              <li key={topic}>{topic}</li>
+            ))}
+          </ul>
+        </>
+      )}
     </section>
   );
-}
+};
 
 export default FurtherEducation;

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaCss3Alt, FaWordpress } from "react-icons/fa";
 import {
   SiLaravel,
   SiTailwindcss,
@@ -12,6 +12,10 @@ import {
   SiGit,
   SiPython,
   SiNestjs,
+  SiVite,
+  SiRadixui,
+  SiPhp,
+  SiElementor,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -84,6 +88,22 @@ export const TechnologyIcon: FC<TechnologyProps> = ({
       );
     case "nest.js":
       return <SiNestjs size={size} className={cn("text-red-600", className)} />;
+    case "vite":
+      return <SiVite size={size} className={cn("text-purple-500", className)} />;
+    case "radixui":
+      return (
+        <SiRadixui size={size} className={cn("text-gray-200", className)} />
+      );
+    case "wordpress":
+      return (
+        <FaWordpress size={size} className={cn("text-blue-500", className)} />
+      );
+    case "php":
+      return <SiPhp size={size} className={cn("text-indigo-400", className)} />;
+    case "elementor":
+      return (
+        <SiElementor size={size} className={cn("text-pink-500", className)} />
+      );
     default:
       return null;
   }

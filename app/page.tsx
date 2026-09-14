@@ -36,7 +36,8 @@ export default function Home() {
                   contactDetails={data.personalInfo.contactDetails}
                 />
                 <Skills skills={data.skills} projects={data.projects} />
-                <Educations educations={data.educations.reverse()} />
+                <Educations educations={[...data.educations].reverse()} />
+                <FurtherEducation furtherEducation={data.furtherEducation} />
               </div>
               <div className="w-full h-full md:border-l-2 border-gold-500 p-4">
                 <About about={data.personalInfo.about} />
@@ -49,7 +50,7 @@ export default function Home() {
             variant="A4"
             className="md:border-none border-l-2 border-gold-500 "
           >
-            <Projects projects={data.projects.reverse()} />
+            <Projects projects={[...data.projects].reverse()} />
           </Page>
         </div>
         <Page className="md:border-none border-l-2 border-gold-500 px-1">

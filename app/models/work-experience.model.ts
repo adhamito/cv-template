@@ -4,6 +4,6 @@ export class WorkExperienceModel {
   location: string;
   durationStart: string;
   durationEnd: string;
-  description: string;
+  description: string[];
 }
 

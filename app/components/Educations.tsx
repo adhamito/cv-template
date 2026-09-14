@@ -14,7 +14,6 @@ const Educations: FC<EducationsProps> = ({ educations }) => {
     selector: ".education-item",
     threshold: 0.1,
   });
-  console.log(educations);
 
   return (
     <section className="p-2">

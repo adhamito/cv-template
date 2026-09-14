@@ -1,5 +1,5 @@
 export class SkillModel {
   name: string;
-  experience: string;
+  level: string;
   description: string;
 }
